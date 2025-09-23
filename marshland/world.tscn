@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b2s7ta58a2pbv"]
 
-[ext_resource type="PackedScene" uid="uid://dsk4dktulrjp7" path="res://player 1.tscn" id="1_f3sb7"]
+[ext_resource type="PackedScene" uid="uid://btfefsenvxkym" path="res://player/player.tscn" id="1_f3sb7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_f3sb7"]
 sky_top_color = Color(0.142954, 0.192529, 0.179825, 1)
@@ -28,7 +28,7 @@ light_color = Color(0.807881, 0.778547, 0.699585, 1)
 shadow_enabled = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
 use_collision = true
 size = Vector3(20, 1, 20)
 

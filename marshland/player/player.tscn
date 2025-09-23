@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://btfefsenvxkym"]
+[gd_scene load_steps=5 format=3 uid="uid://btfefsenvxkym"]
 
-[ext_resource type="Script" uid="uid://328iwv820suk" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://328iwv820suk" path="res://player/player.gd" id="1_4flbx"]
+[ext_resource type="PackedScene" uid="uid://tyafkrc6juqs" path="res://items/guns/pistol.tscn" id="2_rkbax"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4flbx"]
 
@@ -17,8 +18,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 [node name="Camera3D" type="Camera3D" parent="head"]
 current = true
 
-[node name="wand" type="Node3D" parent="head/Camera3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.409)
+[node name="equiped" type="Node3D" parent="head/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.860433)
+
+[node name="pistol" parent="head/Camera3D/equiped" instance=ExtResource("2_rkbax")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.228961, -0.229347, 0.207466)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_4flbx")
