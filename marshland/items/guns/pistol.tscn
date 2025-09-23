@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://tyafkrc6juqs"]
+[gd_scene load_steps=16 format=4 uid="uid://tyafkrc6juqs"]
 
 [ext_resource type="Script" uid="uid://bik0osalvuur1" path="res://items/guns/pistol.gd" id="1_u8ipo"]
 
@@ -139,6 +139,12 @@ shadow_mesh = SubResource("ArrayMesh_fiwd5")
 [sub_resource type="CylinderMesh" id="CylinderMesh_u8ipo"]
 height = 1.0
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u8ipo"]
+transparency = 1
+albedo_color = Color(0.845873, 0.519949, 0, 0.678431)
+emission_enabled = true
+emission = Color(0.912939, 0.683309, 0.41401, 1)
+
 [node name="pistol" type="Node3D"]
 script = ExtResource("1_u8ipo")
 
@@ -177,3 +183,4 @@ unique_name_in_owner = true
 transform = Transform3D(0.04, 0, 0, 0, -4.37114e-08, -0.04, 0, 1, -1.74846e-09, 0, 0, 0)
 mesh = SubResource("CylinderMesh_u8ipo")
 skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_u8ipo")

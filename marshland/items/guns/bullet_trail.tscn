@@ -1,3 +1,19 @@
-[gd_scene format=3 uid="uid://djc2ay6m0ph36"]
+[gd_scene load_steps=4 format=3 uid="uid://djc2ay6m0ph36"]
 
-[node name="bullet_trail" type="Node3D"]
+[ext_resource type="Script" uid="uid://cnxg7ylvxxued" path="res://items/guns/bullet_trail.gd" id="1_hax4s"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nkpdk"]
+height = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hax4s"]
+transparency = 1
+albedo_color = Color(1, 0.716859, 0.436035, 0.537255)
+
+[node name="bullet trail" type="Node3D"]
+script = ExtResource("1_hax4s")
+
+[node name="bullet trail" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.04, 0, 0, 0, -4.37114e-08, -0.04, 0, 1, -1.74846e-09, 0, 0, 0)
+mesh = SubResource("CylinderMesh_nkpdk")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_hax4s")
