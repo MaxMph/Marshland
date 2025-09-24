@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=4 uid="uid://b5ub2yrjq7pkf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o4md2"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fiwd5"]
+_surfaces = [{
+"aabb": AABB(3.76278, -2.2, -0.44553, 2.47443, 1.97196, 0.89106),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEAAwAEAAEABQAAAAIAAwAAAAUABAAGAAIABQACAAYAAwAHAAQAAwAFAAcABwAGAAQABwAFAAYA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AAAAAP//AAAAAAAA/////wAAAAAAAAAAAAD/////AAAAAP//AAD//wAA////////AAD//wAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_xt3qp"]
+resource_name = "pistol 1_Cube_003"
+_surfaces = [{
+"aabb": AABB(3.76278, -2.2, -0.44553, 2.47443, 1.97196, 0.89106),
+"attribute_data": PackedByteArray("CXkEuI1qeLGNagS4CXl4sQl51b2NaqerjWrVvQl5p6sJeXixjWoEuI1qeLEJeQS4CXmnq41q1b2NaqerCXnVvYVu1b0RdaerhW6nqxF11b2FbqerEXXVvYVu1b0Rdaer"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_o4md2"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP//qioAAP//AACqKgAA/////6oqAAAAAAAAqioAAAAAAAAAAP////8AAAAAAAD//wAAAAD//wAAAAAAAP//AAAAAFTV////////VNX/////AABU1f//AAD//1TV//8AAP///78AAP//////v/////////+/AAAAAP///78AAAAAAACqKv//AAD//6oq//8AAAAAqioAAAAA//+qKv////8AAFTVAAD/////VNUAAP//AABU1f///////1TVVFWqqlRVqqpUVaqqVFWqqv+//z//v/8//7//P/8//7+qqlRVqqpUVaqqVFWqqlRV/3//f/9//3//f/9//3//f6oqVNWqKlTVqipU1aoqVNWqqqqqqqqqqqqqqqqqqqqq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_fiwd5")
+
+[node name="mag 1" type="Node3D"]
+
+[node name="Cube_003" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.74846e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.74846e-08, 0, 0.239726, 2.00543)
+mesh = SubResource("ArrayMesh_xt3qp")
+skeleton = NodePath("")
