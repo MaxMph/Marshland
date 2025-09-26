@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://ds07hw1kgl17f"]
+
+[ext_resource type="Texture2D" uid="uid://cnujkci17si58" path="res://textures/373259448_11471878-64x64.png" id="1_ntdds"]
+
+[node name="plant 1" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1.152, 0, 0, 0, 1.152, 0, 0, 0, 1.152, 0, 0.31787, 0)
+modulate = Color(0.771234, 0.690192, 0.532706, 1)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("1_ntdds")
+
+[node name="Sprite3D2" type="Sprite3D" parent="."]
+transform = Transform3D(-5.03555e-08, 0, 1.152, 0, 1.152, 0, -1.152, 0, -5.03555e-08, 0, 0.31787, 0)
+modulate = Color(0.771234, 0.690192, 0.532706, 1)
+alpha_cut = 2
+texture_filter = 0
+texture = ExtResource("1_ntdds")

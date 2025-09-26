@@ -8,26 +8,30 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_4flbx"]
 
-[node name="player" type="CharacterBody3D" node_paths=PackedStringArray("head", "cam")]
+[node name="player" type="CharacterBody3D" node_paths=PackedStringArray("head", "cam") groups=["player"]]
 script = ExtResource("1_4flbx")
 head = NodePath("head")
-cam = NodePath("head/Camera3D")
+cam = NodePath("head/recoil/Camera3D")
 
 [node name="head" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
-[node name="Camera3D" type="Camera3D" parent="head"]
+[node name="recoil" type="Node3D" parent="head"]
+unique_name_in_owner = true
+
+[node name="Camera3D" type="Camera3D" parent="head/recoil"]
+unique_name_in_owner = true
 current = true
 
-[node name="equiped" type="Node3D" parent="head/Camera3D"]
+[node name="equiped" type="Node3D" parent="head/recoil/Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.860433)
 
-[node name="pistol" parent="head/Camera3D/equiped" instance=ExtResource("2_rkbax")]
+[node name="pistol" parent="head/recoil/Camera3D/equiped" instance=ExtResource("2_rkbax")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.228961, -0.229347, 0.207466)
 visible = false
 
-[node name="pistol_base" parent="head/Camera3D/equiped" instance=ExtResource("3_g1dw6")]
-transform = Transform3D(0.12, 0, 0, 0, 0.12, 0, 0, 0, 0.12, 0.228961, -0.229347, 0.207466)
+[node name="pistol_base" parent="head/recoil/Camera3D/equiped" instance=ExtResource("3_g1dw6")]
+transform = Transform3D(0.12, 0, 0, 0, 0.12, 0, 0, 0, 0.12, 0.334965, -0.264514, 0.122668)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_4flbx")

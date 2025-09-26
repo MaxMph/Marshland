@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Marshland"
-run/main_scene="uid://b2s7ta58a2pbv"
+run/main_scene="uid://b3edq2kfv71ti"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -21,7 +21,7 @@ Global="*res://global.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg", "res://addons/scatterbox/plugin.cfg")
 
 [input]
 

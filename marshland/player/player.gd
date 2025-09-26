@@ -1,13 +1,16 @@
 extends CharacterBody3D
 
-var jump_vel = 8
-var speed = 14
-var acc = 40
-var fric = 40
+var jump_vel = 6
+var speed = 8
+var acc = 20
+var fric = 20
 
 var sense = 0.001
 @export var head: Node3D
 @export var cam: Camera3D
+
+var cur_recoil_rot: Vector3
+var recoil_target: Vector3
 
 
 func _ready() -> void:
@@ -45,10 +48,14 @@ func _physics_process(delta: float) -> void:
 		attack()
 
 	move_and_slide()
+	
+	recoil_target = lerp(recoil_target, Vector3.ZERO, 9 * delta)
+	cur_recoil_rot = lerp(cur_recoil_rot, recoil_target, 12 * delta)
+	%recoil.rotation = cur_recoil_rot
 
 func attack():
 	pass
-	for i in $head/Camera3D/equiped.get_children():
+	for i in $head/recoil/Camera3D/equiped.get_children():
 		if i.visible:
 			if i.has_method("attack"):
 				i.attack()
@@ -59,3 +66,6 @@ func attack():
 	#newspell.global_position = $head/Camera3D/wand.global_position
 	#get_parent().add_child(newspell)
 	#newspell.global_rotation = $head/Camera3D.global_rotation
+
+func recoil(target):
+	recoil_target = target

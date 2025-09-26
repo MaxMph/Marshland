@@ -1,9 +1,16 @@
-[gd_scene load_steps=8 format=4 uid="uid://bpkld0ej8quy7"]
+[gd_scene load_steps=14 format=4 uid="uid://bpkld0ej8quy7"]
 
 [ext_resource type="PackedScene" uid="uid://bkvpk8fkvy4do" path="res://items/guns/parts/barrel_1.tscn" id="1_43qbs"]
 [ext_resource type="Script" uid="uid://cbqbghb2v05hu" path="res://items/guns/parts/pistol_base.gd" id="1_gft1d"]
+[ext_resource type="Texture2D" uid="uid://dolida81leimn" path="res://textures/Metal025_1K-PNG_Color.png" id="2_0b5s6"]
 [ext_resource type="PackedScene" uid="uid://b5ub2yrjq7pkf" path="res://items/guns/parts/mag_1.tscn" id="2_gft1d"]
 [ext_resource type="PackedScene" uid="uid://ksuod6vfwiyi" path="res://items/guns/parts/stock_2.tscn" id="2_rw355"]
+[ext_resource type="Texture2D" uid="uid://h8h8l34l80iw" path="res://textures/muzzle_flash.png" id="6_r3qmk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r3qmk"]
+albedo_texture = ExtResource("2_0b5s6")
+uv1_scale = Vector3(0.8, 0.8, 0.8)
+texture_filter = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jpto7"]
 
@@ -39,11 +46,50 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_343ne")
 
+[sub_resource type="Animation" id="Animation_r3qmk"]
+resource_name = "shoot"
+length = 0.14
+step = 0.02
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("barrel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.04, 0.14),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.506492, -0.227091), Vector3(0, 0.506, -0.116), Vector3(0, 0.506492, -0.227091)]
+}
+
+[sub_resource type="Animation" id="Animation_5o0nb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("barrel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.506492, -0.227091)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6dlpy"]
+_data = {
+&"RESET": SubResource("Animation_5o0nb"),
+&"shoot": SubResource("Animation_r3qmk")
+}
+
 [node name="pistol_base" type="Node3D"]
 script = ExtResource("1_gft1d")
 
 [node name="Cube_002" type="MeshInstance3D" parent="."]
 transform = Transform3D(-1.74846e-08, 0, 0.4, 0, 0.4, 0, -0.4, 0, -1.74846e-08, 0, 0.065204, 0)
+material_override = SubResource("StandardMaterial3D_r3qmk")
 mesh = SubResource("ArrayMesh_11i3e")
 skeleton = NodePath("")
 
@@ -61,3 +107,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0458913, -1.7194)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0675341, 0.77128)
 
 [node name="stock 2" parent="stock" instance=ExtResource("2_rw355")]
+visible = false
+
+[node name="bullet_marker" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.508844, -8.29717)
+
+[node name="Sprite3D" type="Sprite3D" parent="bullet_marker"]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
+visible = false
+texture = ExtResource("6_r3qmk")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_6dlpy")
+}
