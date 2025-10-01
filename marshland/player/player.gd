@@ -5,22 +5,23 @@ var speed = 8
 var acc = 20
 var fric = 20
 
-var sense = 0.001
 @export var head: Node3D
 @export var cam: Camera3D
 
 var cur_recoil_rot: Vector3
 var recoil_target: Vector3
 
+var spawn_pos
 
 func _ready() -> void:
 	pass
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	spawn_pos = global_position
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
-		head.rotate_y(-event.relative.x * sense)
-		cam.rotate_x(-event.relative.y * sense)
+		head.rotate_y(-event.relative.x * Global.sense)
+		cam.rotate_x(-event.relative.y * Global.sense)
 		cam.rotation.x = clamp(cam.rotation.x, deg_to_rad(-75), deg_to_rad(75))
 		
 
@@ -29,12 +30,16 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	
-	
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = jump_vel
-		print("jump")
+	if Global.in_menu == false:
+		if Input.is_action_just_pressed("jump") and is_on_floor():
+			velocity.y = jump_vel
+			print("jump")
+			
 		
-	
+		if Input.is_action_just_pressed("attack"):
+			attack()
+		
+		
 	var input_dir := Input.get_vector("left", "right", "up", "down")
 	var direction := (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
@@ -44,8 +49,9 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, fric * delta)
 		velocity.z = move_toward(velocity.z, 0, fric * delta)
 
-	if Input.is_action_just_pressed("attack"):
-		attack()
+
+	if global_position.y <= -0.858:
+		die()
 
 	move_and_slide()
 	
@@ -69,3 +75,12 @@ func attack():
 
 func recoil(target):
 	recoil_target = target
+
+func die():
+	$AnimationPlayer.play("death")
+	global_position = spawn_pos
+	
+
+
+func _on_h_slider_value_changed(value: float) -> void:
+	pass # Replace with function body.

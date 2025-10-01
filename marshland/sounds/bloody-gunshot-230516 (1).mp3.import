@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bc08qruerwy7j"
+path="res://.godot/imported/bloody-gunshot-230516 (1).mp3-ab829b405db2eb191126a738f7cf46b5.mp3str"
+
+[deps]
+
+source_file="res://sounds/bloody-gunshot-230516 (1).mp3"
+dest_files=["res://.godot/imported/bloody-gunshot-230516 (1).mp3-ab829b405db2eb191126a738f7cf46b5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

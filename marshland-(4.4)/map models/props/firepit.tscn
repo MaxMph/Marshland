@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3 uid="uid://0fearecswnad"]
+
+[ext_resource type="Material" uid="uid://br4yqujj7pgw6" path="res://textures/wood 1.tres" id="1_d08e1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d08e1"]
+transparency = 1
+vertex_color_use_as_albedo = true
+emission_enabled = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_xw2fa"]
+material = SubResource("StandardMaterial3D_d08e1")
+
+[sub_resource type="Curve" id="Curve_hiti3"]
+_data = [Vector2(0.0174825, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_hlx2p"]
+offsets = PackedFloat32Array(0, 0.696154)
+colors = PackedColorArray(1, 0.752941, 0, 1, 0.664061, 0.251876, 0, 1)
+
+[node name="firepit" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(0.170794, 0, 0, 0, 0.185266, -0.0962376, 0, 0.0190833, 0.934303, -0.0136088, 0.0507513, 0.0137088)
+size = Vector3(0.831177, 0.349609, 1)
+material = ExtResource("1_d08e1")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(-0.0508754, 0.050317, 0.859952, 0.0205467, 0.179186, -0.229881, -0.161741, 0.00693575, -0.2997, 0.165528, 0.0963876, -0.0427433)
+size = Vector3(1, 0.349609, 0.71051)
+material = ExtResource("1_d08e1")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="."]
+transform = Transform3D(0.109987, 0.086013, 0.572875, -0.0259281, 0.159898, -0.460019, -0.128067, 0.0414974, 0.585132, 0.202712, 0.0888922, 0.16126)
+size = Vector3(0.655762, 0.349609, 0.516876)
+material = ExtResource("1_d08e1")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(-0.0468995, 0, 0.903141, 0, 0.186246, 0, -0.164228, 0, -0.257914, -0.0282922, 0.0180549, -0.201031)
+size = Vector3(0.658203, 0.197266, 0.621979)
+material = ExtResource("1_d08e1")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(-0.0859298, -0.0449651, 0.779394, -0.0150825, 0.18057, 0.21465, -0.14683, 0.00776678, -0.478176, -0.167958, 0.093227, -0.135607)
+size = Vector3(0.658203, 0.197266, 0.621979)
+material = ExtResource("1_d08e1")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="."]
+transform = Transform3D(0.0126181, -0.0449651, 0.908816, 0.0104545, 0.18057, 0.222821, -0.170006, 0.00776678, 0.0811562, -0.177468, 0.131418, -0.133964)
+size = Vector3(0.658203, 0.197266, 0.621979)
+material = ExtResource("1_d08e1")
+
+[node name="GPUParticles3D" type="CPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0586203, 0)
+amount = 10
+lifetime = 1.5
+mesh = SubResource("BoxMesh_xw2fa")
+gravity = Vector3(0, 1, 0)
+initial_velocity_max = 0.2
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+scale_amount_curve = SubResource("Curve_hiti3")
+color = Color(1, 1, 1, 0.807843)
+color_ramp = SubResource("Gradient_hlx2p")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+light_color = Color(1, 0.550889, 0.0247469, 1)
+omni_range = 4.50173

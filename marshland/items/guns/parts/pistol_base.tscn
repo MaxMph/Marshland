@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://bpkld0ej8quy7"]
+[gd_scene load_steps=15 format=4 uid="uid://bpkld0ej8quy7"]
 
 [ext_resource type="PackedScene" uid="uid://bkvpk8fkvy4do" path="res://items/guns/parts/barrel_1.tscn" id="1_43qbs"]
 [ext_resource type="Script" uid="uid://cbqbghb2v05hu" path="res://items/guns/parts/pistol_base.gd" id="1_gft1d"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b5ub2yrjq7pkf" path="res://items/guns/parts/mag_1.tscn" id="2_gft1d"]
 [ext_resource type="PackedScene" uid="uid://ksuod6vfwiyi" path="res://items/guns/parts/stock_2.tscn" id="2_rw355"]
 [ext_resource type="Texture2D" uid="uid://h8h8l34l80iw" path="res://textures/muzzle_flash.png" id="6_r3qmk"]
+[ext_resource type="AudioStream" uid="uid://bc08qruerwy7j" path="res://sounds/bloody-gunshot-230516 (1).mp3" id="7_5o0nb"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r3qmk"]
 albedo_texture = ExtResource("2_0b5s6")
@@ -46,6 +47,21 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_343ne")
 
+[sub_resource type="Animation" id="Animation_5o0nb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("barrel:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.506492, -0.227091)]
+}
+
 [sub_resource type="Animation" id="Animation_r3qmk"]
 resource_name = "shoot"
 length = 0.14
@@ -61,21 +77,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector3(0, 0.506492, -0.227091), Vector3(0, 0.506, -0.116), Vector3(0, 0.506492, -0.227091)]
-}
-
-[sub_resource type="Animation" id="Animation_5o0nb"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("barrel:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector3(0, 0.506492, -0.227091)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_6dlpy"]
@@ -121,3 +122,7 @@ texture = ExtResource("6_r3qmk")
 libraries = {
 &"": SubResource("AnimationLibrary_6dlpy")
 }
+
+[node name="BloodyGunshot230516(1)" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_5o0nb")
+max_polyphony = 6

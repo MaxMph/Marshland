@@ -1,5 +1,8 @@
 extends Node
 
+var in_menu = false
+
+var sense = 0.001
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

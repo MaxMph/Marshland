@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://b3edq2kfv71ti"]
+[gd_scene load_steps=25 format=4 uid="uid://b3edq2kfv71ti"]
 
 [ext_resource type="PackedScene" uid="uid://btfefsenvxkym" path="res://player/player.tscn" id="1_ksw02"]
 [ext_resource type="Texture2D" uid="uid://y00qduvs8wkn" path="res://textures/dirt.png" id="1_oc0pb"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://qoepmunp8en4" path="res://map models/buildings/cabin_1.tscn" id="8_jhmcy"]
 [ext_resource type="PackedScene" uid="uid://0fearecswnad" path="res://map models/props/firepit.tscn" id="10_bprab"]
 [ext_resource type="AudioStream" uid="uid://b65tr5im5vveo" path="res://sounds/cricket-on-summer-night-binaural-17892.mp3" id="11_n4u6i"]
+[ext_resource type="PackedScene" uid="uid://dlj5ev141hca7" path="res://bug_2.tscn" id="12_fhovj"]
 
 [sub_resource type="Gradient" id="Gradient_oc0pb"]
 offsets = PackedFloat32Array(0, 0.995902, 1)
@@ -119,14 +120,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.81981, 1.71875, -12.3523)
 [node name="ScatterScene3D" type="Node3D" parent="."]
 script = ExtResource("4_koa53")
 scenes = Array[PackedScene]([ExtResource("5_koa53"), ExtResource("5_6fmg8")])
-single_scene = true
 scene_num = 1
 instanced_scene_collision_layers = 0
-placement_size = Vector3(2.01, 2.01, 2.01)
+placement_size = Vector3(7.01, 7.01, 7.01)
 metadata/_custom_type_script = "uid://b7hb7oych5bgm"
 
 [node name="DrawPointer" type="Node3D" parent="ScatterScene3D"]
-transform = Transform3D(0.021628, 0.983966, -0.177042, -0.999766, 0.0212862, -0.00383002, 0, 0.177083, 0.984196, -28.4627, 6.07878, -15.206)
+transform = Transform3D(0.7532583, -0.5834426, 0.30363908, 0.65772486, 0.66818666, -0.34774214, 0, 0.4616506, 0.88706183, 27.109537, 9.469658, 16.506294)
 
 [node name="ObjectParent" type="Node3D" parent="ScatterScene3D"]
 
@@ -7189,6 +7189,1443 @@ transform = Transform3D(1.23468, 0, 0, 0, 0.922845, 0, 0, 0, 0.792982, -24.2721,
 [node name="@Node3D@54732" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
 transform = Transform3D(1.10825, 0, 0, 0, 0.915915, 0, 0, 0, 0.84688, -23.2271, 0, 4.31429)
 
+[node name="@Node3D@121140" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1077425, 0, 0, 0, 1.2173407, 0, 0, 0, 0.89252615, 51.266373, 0, 37.882286)
+
+[node name="@Node3D@121141" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0984274, 0, 0, 0, 1.1647145, 0, 0, 0, 1.2452619, 48.897217, 0, 37.52299)
+
+[node name="@Node3D@121142" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0442057, 0, 0, 0, 0.9010368, 0, 0, 0, 0.92350966, 48.379044, 9.536743e-07, 41.15355)
+
+[node name="@Node3D@121143" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1091783, -0.107066534, -0.01298084, 0.107009895, 1.0925322, 0.13245954, 0, -0.10856926, 0.89548403, 57.607944, 0.33290768, 41.95121)
+
+[node name="@Node3D@121145" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8836432, -0.15177052, -0.049206987, 0.17545488, 0.92437077, 0.2996992, 0, -0.27394032, 0.8449218, 58.147694, 1.5216775, 46.486668)
+
+[node name="@Node3D@121147" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1585108, -0.20528728, -0.07844085, 0.156168, 0.7690322, 0.2938494, 0, -0.39131483, 1.0241085, 59.885418, 2.4923315, 48.235847)
+
+[node name="@Node3D@121148" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8907528, -0.14888263, -0.061822567, 0.20683707, 1.0554937, 0.43828708, 0, -0.4217385, 1.0156409, 61.124973, 3.1558633, 49.260128)
+
+[node name="@Node3D@121149" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2185117, -0.16088416, -0.032062225, 0.13562807, 0.9879876, 0.19689372, 0, -0.23967826, 1.202675, 61.24196, 0.7451372, 41.8438)
+
+[node name="@Node3D@121150" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9830262, -0.09723109, -0.014642918, 0.10947687, 1.0822872, 0.16299151, 0, -0.13614325, 0.90401083, 59.476604, 0.4683857, 41.471645)
+
+[node name="@Node3D@121153" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.543233, -0.55269563, -0.1842078, 0.84694594, 0.74922055, 0.24970753, 0, -0.25802815, 0.77418566, 67.10092, 3.724557, 43.955086)
+
+[node name="@Node3D@121154" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.64209586, -0.73972005, -0.19652367, 0.6810302, 0.5521777, 0.14669873, 0, -0.23656848, 0.89044964, 65.90839, 3.908217, 47.352375)
+
+[node name="@Node3D@121155" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.25873974, -0.7658141, -0.19186905, 1.1346272, 0.3607058, 0.09037216, 0, -0.21879637, 0.87329006, 68.02936, 5.672471, 43.27292)
+
+[node name="@Node3D@121156" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.5094667, -1.0900353, -0.24007127, 1.0108948, 0.4506197, 0.09924526, 0, -0.17456535, 0.79260796, 67.51522, 3.014638, 40.842297)
+
+[node name="@Node3D@121157" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.98800904, -0.09095815, -0.0075689084, 0.07443148, 0.80293244, 0.06681449, 0, -0.07195595, 0.8647192, 64.00611, 0.29295158, 36.513935)
+
+[node name="@Node3D@121158" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1935595, -0.35537755, -0.09548774, 0.30714563, 0.96210855, 0.2585126, 0, -0.26630113, 0.99109524, 65.73204, 1.3433905, 40.584164)
+
+[node name="@Node3D@121159" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.76761085, -0.04512076, -0.0037127298, 0.047628574, 0.80482554, 0.06622449, 0, -0.0880389, 1.0699358, 61.219837, 0.24091816, 38.447186)
+
+[node name="@Node3D@121160" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1378354, -0.09459378, -0.010093848, 0.07220842, 0.8587911, 0.09163929, 0, -0.120929845, 1.1332854, 61.877422, 0.26481915, 38.187386)
+
+[node name="@Node3D@121161" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9902519, -0.55793804, -0.026720397, 0.46092284, 0.8161933, 0.03908859, 0, -0.05621735, 1.1738521, 66.707115, 1.1901016, 35.87774)
+
+[node name="@Node3D@121162" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7833407, -0.016614692, -0.00044033074, 0.024162907, 1.1384205, 0.030170979, 0, -0.024955451, 0.9416267, 59.525368, 0.048901558, 36.924393)
+
+[node name="@Node3D@121163" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.120698, -0.020255147, 0.00018721475, 0.02041603, 1.129503, -0.010439797, 0, 0.007150366, 0.7736128, 62.212524, 0.032992363, 31.296602)
+
+[node name="@Node3D@121164" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8367821, 0, 0, 0, 0.86645025, 0, 0, 0, 1.2053556, 58.073956, 0, 27.666277)
+
+[node name="@Node3D@121165" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.93897724, -0.48619768, 0.09289431, 0.5099529, 0.9501691, -0.181542, 0, 0.22460736, 1.1755681, 64.600395, 0.73403645, 28.942425)
+
+[node name="@Node3D@121166" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.98086375, -0.049094044, 0.00032691148, 0.048293766, 0.9648319, -0.0064247027, 0, 0.00628589, 0.9439857, 61.847233, 0.044137, 27.630991)
+
+[node name="@Node3D@121167" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1660002, 0, 0, 0, 1.1240932, 0, 0, 0, 0.90514916, 58.88303, 0, 31.620756)
+
+[node name="@Node3D@121168" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1692927, -0.058525264, 0.00038971286, 0.04515809, 0.9021861, -0.0060075517, 0, 0.007148055, 1.0734615, 62.151043, 0.061775208, 27.266417)
+
+[node name="@Node3D@121169" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9275857, 0, 0, 0, 0.85331905, 0, 0, 0, 0.8228745, 55.199295, 9.536743e-07, 28.652231)
+
+[node name="@Node3D@121170" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.079653, 0, 0, 0, 0.8414794, 0, 0, 0, 0.95328224, 54.975704, 9.536743e-07, 23.246344)
+
+[node name="@Node3D@121171" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.143467, 0, 0, 0, 1.1413128, 0, 0, 0, 0.9709725, 59.128, 0, 22.494362)
+
+[node name="@Node3D@121172" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8661067, 0, 0, 0, 1.0639175, 0, 0, 0, 1.0445726, 53.604095, 0, 29.56037)
+
+[node name="@Node3D@121173" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8336529, 0, 0, 0, 0.9820995, 0, 0, 0, 1.1692212, 54.16646, 0, 31.320602)
+
+[node name="@Node3D@121174" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8643809, 0.7078157, -0.27066055, -0.6316395, 0.67295486, -0.25733018, 0, 0.31848043, 0.83287144, 49.873318, 1.7775087, 23.684074)
+
+[node name="@Node3D@121175" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0859742, 0, 0, 0, 0.90769416, 0, 0, 0, 0.9417559, 53.221947, 9.536743e-07, 30.895746)
+
+[node name="@Node3D@121176" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.98572594, 0, 0, 0, 0.99491113, 0, 0, 0, 0.8530347, 52.041508, 0, 32.89888)
+
+[node name="@Node3D@121177" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9573977, 0, 0, 0, 1.1409154, 0, 0, 0, 0.9921098, 51.125423, 0, 31.54134)
+
+[node name="@Node3D@121178" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0833387, 0, 0, 0, 1.1343238, 0, 0, 0, 0.9006475, 54.088818, 9.536743e-07, 28.12968)
+
+[node name="@Node3D@121179" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0713919, 0, 0, 0, 0.8329425, 0, 0, 0, 0.83566606, 55.662476, 9.536743e-07, 28.696583)
+
+[node name="@Node3D@121180" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.91917694, 0, 0, 0, 0.8180393, 0, 0, 0, 1.2272325, 55.98103, 9.536743e-07, 36.43343)
+
+[node name="@Node3D@121181" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8120294, 0, 0, 0, 0.958719, 0, 0, 0, 0.8912613, 55.552, 9.536743e-07, 34.640526)
+
+[node name="@Node3D@121182" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.99053735, 0, 0, 0, 0.9803995, 0, 0, 0, 0.94816345, 59.166985, 0, 33.177944)
+
+[node name="@Node3D@121183" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1431098, -0.05721476, 0.0003809864, 0.048146173, 0.96188325, -0.006405068, 0, 0.006774043, 1.0172943, 62.174118, 0.06282997, 27.281347)
+
+[node name="@Node3D@121184" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9434619, 0, 0, 0, 1.0796788, 0, 0, 0, 0.83661866, 60.03267, 9.536743e-07, 33.290634)
+
+[node name="@Node3D@121185" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7624289, 0, 0, 0, 0.8833933, 0, 0, 0, 1.1500988, 59.937733, 9.536743e-07, 31.472385)
+
+[node name="@Node3D@121186" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0269101, 0, 0, 0, 1.2169144, 0, 0, 0, 1.1137027, 59.569412, 9.536743e-07, 32.314266)
+
+[node name="@Node3D@121187" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8358179, 0, 0, 0, 0.981249, 0, 0, 0, 0.9885402, 57.333282, 0, 32.57024)
+
+[node name="@Node3D@121188" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.90159124, -0.03646311, 0.00034218098, 0.034662113, 0.856984, -0.0080422, 0, 0.007205513, 0.7678259, 62.385223, 0.057870865, 29.218403)
+
+[node name="@Node3D@121189" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.917452, 0, 0, 0, 1.1460526, 0, 0, 0, 1.0627456, 55.965862, 9.536743e-07, 23.06762)
+
+[node name="@Node3D@121190" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1451205, -0.00043386765, 0, 0.00044888747, 1.1847628, 0, 0, 0, 0.9078643, 59.685318, 0.00010681152, 29.439991)
+
+[node name="@Node3D@121191" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1816983, 0.09715526, -0.0005133552, -0.09799322, 1.1918572, -0.0062976116, 0, 0.0049690325, 0.94041646, 54.52985, 0.017130852, 21.636242)
+
+[node name="@Node3D@121192" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.94718015, -0.047541317, 0, 0.059172478, 1.1789113, 0, 0, 0, 0.7815112, 61.193024, 0.010820389, 28.286808)
+
+[node name="@Node3D@121193" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0597993, 0, 0, 0, 0.98445475, 0, 0, 0, 0.86513835, 54.21834, 9.536743e-07, 26.583828)
+
+[node name="@Node3D@121194" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.76265544, 0, 0, 0, 0.78002733, 0, 0, 0, 1.1669478, 56.49813, 0, 20.988552)
+
+[node name="@Node3D@121195" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.79727745, 0.06554946, -0.00034635444, -0.091682576, 1.1151031, -0.0058920532, 0, 0.005893353, 1.1153492, 54.56046, 0.009236336, 22.650623)
+
+[node name="@Node3D@121196" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2282516, 0, 0, 0, 0.81183887, 0, 0, 0, 1.0677934, 57.7768, 0, 24.370018)
+
+[node name="@Node3D@121197" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7067716, 0.6285039, -0.21439478, -0.74735475, 0.7528227, -0.2568023, 0, 0.3532403, 1.0355333, 50.736843, 1.8853254, 21.787151)
+
+[node name="@Node3D@121198" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.997921, 0, 0, 0, 1.0031712, 0, 0, 0, 1.1175134, 53.69675, 9.536743e-07, 29.039198)
+
+[node name="@Node3D@121199" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0984013, 0.22761613, -0.016284643, -0.22634894, 1.0867237, -0.07774892, 0, 0.062086973, 0.8678113, 52.932213, 0.11766529, 23.529308)
+
+[node name="@Node3D@121200" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0255103, 0, 0, 0, 0.76049227, 0, 0, 0, 0.8604164, 50.065445, 0, 32.46902)
+
+[node name="@Node3D@121201" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1793356, 0, 0, 0, 1.0497894, 0, 0, 0, 1.0924542, 52.60577, 0, 27.714987)
+
+[node name="@Node3D@121202" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.22953, 0.064097926, -0.0049288496, -0.055709332, 1.0623379, -0.08168913, 0, 0.079139724, 1.0291837, 46.187294, 0.08796978, 31.70123)
+
+[node name="@Node3D@121203" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0228276, 0.28788152, -0.09591114, -0.29126644, 0.93146443, -0.31032836, 0, 0.3281212, 0.9848704, 46.245674, 0.5285406, 30.134598)
+
+[node name="@Node3D@121204" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8729837, 0.0646569, -0.004769614, -0.07136733, 0.95837134, -0.0706972, 0, 0.08829308, 1.1969012, 50.744747, 0.0021362305, 28.435305)
+
+[node name="@Node3D@121205" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9891433, 0.08596409, -0.006334861, -0.10200067, 1.1673286, -0.08602271, 0, 0.07698935, 1.0447459, 48.67231, 0.109698296, 29.275444)
+
+[node name="@Node3D@121206" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.073651, 0, 0, 0, 1.1580048, 0, 0, 0, 0.8704663, 57.052605, 0, 31.317093)
+
+[node name="@Node3D@121207" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1760112, -0.07394803, -0.004807075, 0.07431596, 1.1768891, 0.076505, 0, -0.076606564, 1.1784514, 56.77084, 0.09524059, 40.356014)
+
+[node name="@Node3D@121208" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1213932, 0, 0, 0, 1.0414834, 0, 0, 0, 1.0213126, 53.977863, 9.536743e-07, 33.072014)
+
+[node name="@Node3D@121209" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0833769, -0.02350653, -0.0005280456, 0.02077894, 0.9571838, 0.02150197, 0, -0.026389102, 1.1747398, 61.03574, 0.034920692, 35.105312)
+
+[node name="@Node3D@121210" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0722606, -0.0066354717, -4.1103885e-05, 0.0073915133, 1.1943874, 0.007398715, 0, -0.0075605786, 1.2205173, 55.448906, 0.0022640228, 38.379242)
+
+[node name="@Node3D@121211" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2061514, 0, 0, 0, 0.87274396, 0, 0, 0, 1.0020335, 56.195118, 0, 35.916725)
+
+[node name="@Node3D@121212" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7745833, -0.004793355, -2.9692766e-05, 0.005708234, 0.92238796, 0.0057137953, 0, -0.0069474154, 1.1215333, 55.96423, 0.0071229935, 38.648773)
+
+[node name="@Node3D@121213" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8334081, -0.7210294, -0.19470517, 0.52231103, 0.56268656, 0.15194662, 0, -0.19925159, 0.7378656, 65.82404, 2.314427, 43.51928)
+
+[node name="@Node3D@121214" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.77231896, -0.0050719553, -3.3287426e-05, 0.00808546, 1.2311397, 0.008080013, 0, -0.008011075, 1.2206358, 60.93801, 0.003786087, 33.10235)
+
+[node name="@Node3D@121215" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0309044, -0.119613275, 0.0058031487, 0.118590645, 1.0196906, -0.049471237, 0, 0.05585727, 1.1513182, 63.000156, 0.0888443, 32.26237)
+
+[node name="@Node3D@121216" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1845, -0.2950776, -0.0072675035, 0.21360193, 0.8569207, 0.02110521, 0, -0.019350033, 0.78565645, 64.62737, 0.32866955, 34.731785)
+
+[node name="@Node3D@121217" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.81856203, 0, 0, 0, 1.0736358, 0, 0, 0, 0.8251562, 58.198956, -9.536743e-07, 29.361181)
+
+[node name="@Node3D@121218" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.083633, 0, 0, 0, 0.81431156, 0, 0, 0, 1.2254766, 57.174007, 9.536743e-07, 29.574064)
+
+[node name="@Node3D@121219" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.204581, -0.048927806, 1.8513338e-05, 0.030715121, 0.7561927, -0.0002861287, 0, 0.00034281073, 0.90599424, 61.64976, 0.027240753, 29.785355)
+
+[node name="@Node3D@121220" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1286781, -0.056492426, 0.00037617644, 0.05603816, 1.1195525, -0.007454969, 0, 0.0057148617, 0.8582313, 61.830833, 0.047413826, 27.016457)
+
+[node name="@Node3D@121221" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9004213, 0.18658973, -0.013349437, -0.18147817, 0.87129474, -0.062336195, 0, 0.06356862, 0.88852084, 53.034748, 0.09292412, 23.576378)
+
+[node name="@Node3D@121222" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8775593, 0.071960405, -0.005240609, -0.07933835, 0.9624292, -0.07009016, 0, 0.064844176, 0.8903951, 53.635506, 0.037903786, 23.59522)
+
+[node name="@Node3D@121223" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1567497, 0, 0, 0, 0.97089386, 0, 0, 0, 0.9845684, 55.70076, 0, 27.640844)
+
+[node name="@Node3D@121224" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.769793, 0.00709711, 0, -0.010599491, 1.1496812, 0, 0, 0, 1.1302145, 54.360233, 0.0026922226, 23.298937)
+
+[node name="@Node3D@121225" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1032289, 0, 0, 0, 0.8619034, 0, 0, 0, 0.84825224, 56.029404, -9.536743e-07, 23.780764)
+
+[node name="@Node3D@121226" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.94998467, 0.00035993377, -1.3630394e-07, -0.0003356064, 0.8857765, -0.00033543626, 0, 0.0004378733, 1.156279, 49.326862, 0.00012111664, 31.14561)
+
+[node name="@Node3D@121227" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8487883, 0, 0, 0, 1.0972097, 0, 0, 0, 0.76021296, 51.819324, 9.536743e-07, 28.082031)
+
+[node name="@Node3D@121228" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.99100906, 0.597261, -0.2968702, -0.5817632, 0.774055, -0.38474616, 0, 0.41126722, 0.8274118, 49.582867, 0.62772274, 26.340538)
+
+[node name="@Node3D@121229" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7554537, 0, 0, 0, 1.0779983, 0, 0, 0, 1.1358981, 47.173824, 9.536743e-07, 32.665863)
+
+[node name="@Node3D@121230" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0311056, 0.07873895, -0.00683805, -0.059053592, 0.7675324, -0.06665602, 0, 0.10004631, 1.1520157, 47.459454, 0.09884453, 30.51493)
+
+[node name="@Node3D@121231" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1263359, 0, 0, 0, 0.7791377, -0.00029505303, 0, 0.00030827834, 0.8140613, 47.370632, 2.861023e-06, 32.468575)
+
+[node name="@Node3D@121232" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2326225, -0.0070043374, -0.00011670759, 0.0058624162, 1.0313811, 0.017185068, 0, -0.019148938, 1.1492451, 53.265823, 0.006259918, 40.70238)
+
+[node name="@Node3D@121233" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9468541, 0, 0, 0, 1.1447862, 0, 0, 0, 1.225598, 48.86492, 9.536743e-07, 37.168182)
+
+[node name="@Node3D@121234" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1188264, 0, 0, 0, 1.1742741, 0, 0, 0, 1.1605875, 48.5293, 9.536743e-07, 36.68749)
+
+[node name="@Node3D@121236" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8999343, -0.05649215, -0.0049391496, 0.07522571, 1.1892737, 0.103979066, 0, -0.066311896, 0.7584507, 56.559696, 0.08625984, 40.41512)
+
+[node name="@Node3D@121237" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.78360236, -0.05581896, -0.0066344407, 0.07027705, 0.9728263, 0.11562664, 0, -0.13413718, 1.128565, 56.01027, 0.19151211, 42.01944)
+
+[node name="@Node3D@121238" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9477766, -0.09107565, -0.014074377, 0.106498495, 1.0824246, 0.1672725, 0, -0.13046515, 0.84424335, 56.439693, 0.23650455, 42.06779)
+
+[node name="@Node3D@121239" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.047039, 0, 0, 0, 1.0345316, 0, 0, 0, 0.90467393, 58.89214, 0, 31.503805)
+
+[node name="@Node3D@121240" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2326667, -0.026702467, -0.00026648695, 0.01957085, 0.9033597, 0.009015406, 0, -0.008040941, 0.80571663, 62.04749, 0.025860786, 33.31128)
+
+[node name="@Node3D@121241" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0355928, -0.12336164, -0.001185271, 0.10226424, 0.85840565, 0.0082476465, 0, -0.011901356, 1.2386796, 63.40521, 0.13239956, 32.850025)
+
+[node name="@Node3D@121242" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8846725, -0.044403907, 0, 0.061834402, 1.2319456, 0, 0, 0, 0.811029, 61.693386, 0.035935402, 27.745478)
+
+[node name="@Node3D@121243" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7181599, -0.26947248, 0.005519769, 0.41742548, 1.1119969, -0.022777708, 0, 0.017161135, 0.8377983, 63.736332, 0.54710007, 24.298326)
+
+[node name="@Node3D@121244" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1092966, 0, 0, 0, 0.8239477, 0, 0, 0, 1.2179008, 57.00897, 9.536743e-07, 25.373384)
+
+[node name="@Node3D@121245" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7761871, 0, 0, 0, 1.0847197, 0, 0, 0, 0.8126969, 57.68165, 0, 25.206776)
+
+[node name="@Node3D@121246" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1957871, 0.04828756, -0.0019486826, -0.038803406, 0.95936024, -0.038715743, 0, 0.046253644, 1.1461465, 51.968033, 0.030454636, 26.483633)
+
+[node name="@Node3D@121247" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2217349, 0.011263313, -0.000103785256, -0.011124922, 1.2066212, -0.011118354, 0, 0.010307133, 1.1185834, 53.120052, 0.0020942688, 25.8578)
+
+[node name="@Node3D@121248" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8901471, 0, 0, 0, 0.8074708, 0, 0, 0, 1.1002269, 53.072613, 0, 29.983028)
+
+[node name="@Node3D@121249" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8886194, 0, 0, 0, 0.9801827, 0, 0, 0, 1.2084506, 53.70112, 0, 27.237295)
+
+[node name="@Node3D@121250" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.201381, 0, 0, 0, 1.0390911, 0, 0, 0, 1.1199701, 53.20527, 9.536743e-07, 34.561497)
+
+[node name="@Node3D@121251" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.772598, 0, 0, 0, 0.86132395, 0, 0, 0, 0.78752553, 57.9824, 0, 31.912241)
+
+[node name="@Node3D@121252" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9629196, 0, 0, 0, 0.7608443, 0, 0, 0, 0.87738144, 53.56976, 0, 32.891266)
+
+[node name="@Node3D@121253" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.90771747, 0, 0, 0, 1.1405203, 0, 0, 0, 1.1512479, 54.995365, 0, 27.57088)
+
+[node name="@Node3D@121254" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8348355, 0, 0, 0, 1.0353439, 0, 0, 0, 0.93444693, 59.38973, 0, 27.742085)
+
+[node name="@Node3D@121255" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7936415, 0, 0, 0, 0.8636335, 0, 0, 0, 1.119207, 57.177113, 0, 30.013474)
+
+[node name="@Node3D@121256" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1379197, 0, 0, 0, 1.2424095, 0, 0, 0, 0.9648458, 55.84963, 9.536743e-07, 30.214401)
+
+[node name="@Node3D@121257" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7629395, 0, 0, 0, 1.0054142, 0, 0, 0, 1.0304708, 55.679947, 9.536743e-07, 30.623764)
+
+[node name="@Node3D@121258" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.92049956, 0, 0, 0, 1.0142274, 0, 0, 0, 1.0199912, 53.668015, 9.536743e-07, 28.945713)
+
+[node name="@Node3D@121259" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7832806, 0, 0, 0, 0.95539385, 0, 0, 0, 1.0949731, 56.91531, 0, 31.394444)
+
+[node name="@Node3D@121260" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8837226, 0, 0, 0, 0.8567018, 0, 0, 0, 1.2354577, 59.7016, 0, 23.071766)
+
+[node name="@Node3D@121261" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7769037, -0.00029435623, 0, 0.0003956042, 1.0441306, 0, 0, 0, 0.95688546, 60.64158, 0.00046920776, 29.603798)
+
+[node name="@Node3D@121262" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7641311, 0, 0, 0, 1.174375, 0, 0, 0, 0.94236135, 58.31315, 0, 29.646057)
+
+[node name="@Node3D@121263" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.882649, 0, 0, 0, 0.9049514, 0, 0, 0, 1.2315985, 59.124912, 0, 23.420261)
+
+[node name="@Node3D@121264" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9112874, 0, 0, 0, 0.8668417, 0, 0, 0, 0.8641998, 53.882393, 9.536743e-07, 26.616238)
+
+[node name="@Node3D@121265" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7648487, 0, 0, 0, 1.2078729, 0, 0, 0, 0.7724007, 55.618504, 9.536743e-07, 29.732107)
+
+[node name="@Node3D@121266" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.94983625, 0, 0, 0, 0.85621136, 0, 0, 0, 1.226161, 55.204628, 9.536743e-07, 29.358974)
+
+[node name="@Node3D@121267" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.87454355, 0, 0, 0, 1.0904821, 0, 0, 0, 1.2105155, 56.43859, 0, 30.56225)
+
+[node name="@Node3D@121268" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8290062, -0.08199697, -0.012348673, 0.08375609, 0.8280119, 0.124697864, 0, -0.12027094, 0.7986164, 59.94337, 0.44591713, 41.014713)
+
+[node name="@Node3D@121269" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9477458, -0.15391456, -0.049985588, 0.17913835, 0.99782336, 0.32405502, 0, -0.3808281, 1.1726378, 60.51705, 1.5918036, 45.434097)
+
+[node name="@Node3D@121270" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0493397, -0.2206807, -0.07494675, 0.21693605, 0.9248612, 0.3140979, 0, -0.31347755, 0.9230345, 62.897778, 2.0525985, 45.530464)
+
+[node name="@Node3D@121271" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0157584, -0.17251739, -0.064603806, 0.20744, 1.071165, 0.40112674, 0, -0.32095626, 0.85707855, 59.525913, 2.0369225, 47.219307)
+
+[node name="@Node3D@121272" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8211419, -0.27726856, -0.08374412, 0.33803368, 0.91741073, 0.27708793, 0, -0.31710202, 1.0498935, 65.673935, 1.9774952, 42.785965)
+
+[node name="@Node3D@121273" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9114919, -0.18261991, -0.054980665, 0.20565833, 0.94117254, 0.28335515, 0, -0.24307825, 0.80739146, 63.33327, 1.7263803, 44.237427)
+
+[node name="@Node3D@121274" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7946621, -0.13368425, -0.04578936, 0.19577818, 1.0415721, 0.35675797, 0, -0.31948566, 0.93275386, 62.22075, 2.030283, 45.853714)
+
+[node name="@Node3D@121275" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.2145023, -0.9371801, -0.21150824, 0.9929413, 0.21625045, 0.04880466, 0, -0.22364113, 0.9909402, 67.790764, 7.2724953, 46.239616)
+
+[node name="@Node3D@121276" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8419016, -0.16867732, -0.050783023, 0.2135317, 0.97720414, 0.29420304, 0, -0.30988085, 1.0292783, 63.42303, 1.5816884, 43.705956)
+
+[node name="@Node3D@121277" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.605115, -0.44711447, -0.11387248, 0.66732365, 0.8481286, 0.216004, 0, -0.21913768, 0.860433, 66.00251, 1.9280491, 41.934093)
+
+[node name="@Node3D@121278" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.72551787, -0.4500552, -0.08095551, 0.4521444, 0.70604086, 0.12700197, 0, -0.20521228, 1.1408348, 65.83534, 1.1930342, 39.67432)
+
+[node name="@Node3D@121279" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7526016, -0.09026927, -0.013755152, 0.1057831, 0.8619317, 0.1313404, 0, -0.16282785, 1.0685705, 62.73991, 0.44550514, 39.04188)
+
+[node name="@Node3D@121280" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8595961, -0.18187714, -0.056791086, 0.20855135, 0.89810026, 0.28043157, 0, -0.32295242, 1.034276, 64.073746, 2.0700912, 44.804207)
+
+[node name="@Node3D@121281" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9260446, -0.14278291, -0.028363274, 0.11889295, 0.7418292, 0.14736153, 0, -0.17384304, 0.87513936, 62.632442, 0.9377432, 41.864014)
+
+[node name="@Node3D@121282" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7973963, -0.5891896, -0.1500566, 0.7002204, 0.8899385, 0.22665225, 0, -0.28097817, 1.1032466, 66.06477, 2.0579062, 42.191322)
+
+[node name="@Node3D@121283" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2338914, -0.11359459, -0.009452556, 0.10500232, 1.1327167, 0.094256856, 0, -0.08255306, 0.9920682, 63.331867, 0.23939228, 36.618374)
+
+[node name="@Node3D@121284" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.86645395, -0.023698704, -0.00062798103, 0.029131232, 1.0643265, 0.028203098, 0, -0.021814575, 0.82323694, 58.349113, 0.01816082, 36.951202)
+
+[node name="@Node3D@121285" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1527793, -0.13022394, -0.01958212, 0.09210825, 0.79733914, 0.11989802, 0, -0.16077903, 1.0692037, 58.83717, 0.39456463, 41.45989)
+
+[node name="@Node3D@121286" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.88496405, -0.17826927, -0.048519544, 0.20000224, 0.9243764, 0.25158754, 0, -0.2260137, 0.8304138, 63.33584, 1.3481874, 42.948246)
+
+[node name="@Node3D@121287" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9647123, -0.20699537, 0.0007648086, 0.21442446, 0.99932253, -0.003692307, 0, 0.002962004, 0.8016661, 64.75575, 0.36346054, 35.204247)
+
+[node name="@Node3D@121288" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0438701, -0.22398001, 0.0008275637, 0.16006579, 0.74598455, -0.0027562715, 0, 0.0043159644, 1.1681153, 65.41311, 0.5056162, 34.91102)
+
+[node name="@Node3D@121289" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.034101, -0.09436024, -0.003367762, 0.09039035, 0.98933446, 0.03530982, 0, -0.037446488, 1.049201, 63.73514, 0.15187836, 34.07974)
+
+[node name="@Node3D@123718" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.878895, 0, 0, 0, 1.1968477, 0, 0, 0, 1.245266, 44.23141, 4.7683716e-07, 37.758484)
+
+[node name="@Node3D@123719" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8506223, 0, 0, 0, 0.7568883, 0, 0, 0, 1.0607085, 44.02208, 0, 38.56381)
+
+[node name="@Node3D@123720" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2091502, 0, 0, 0, 1.2457187, 0, 0, 0, 0.7746867, 46.30908, 0, 37.85547)
+
+[node name="@Node3D@123721" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1727529, 0, 0, 0, 1.1250416, 0, 0, 0, 1.2365099, 44.851967, 0, 36.287224)
+
+[node name="@Node3D@123722" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0930232, 0, 0, 0, 0.9009851, 0, 0, 0, 1.2160423, 48.211353, 0, 36.15127)
+
+[node name="@Node3D@123723" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8259739, 0, 0, 0, 1.1129833, 0, 0, 0, 1.1406357, 46.128178, 0, 37.829624)
+
+[node name="@Node3D@123724" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.864548, 0, 0, 0, 0.9798132, 0, 0, 0, 1.1189384, 46.487923, 0, 37.87993)
+
+[node name="@Node3D@123725" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8557831, 0, 0, 0, 0.75873613, 0, 0, 0, 0.7580109, 47.34856, 0, 34.907436)
+
+[node name="@Node3D@123726" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.944072, 0.009875427, -0.00029916342, -0.0080825, 0.7719631, -0.023385635, 0, 0.028088931, 0.92721957, 43.24586, 0.023200035, 34.987373)
+
+[node name="@Node3D@123727" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8463092, 0, 0, 0, 0.8123154, 0, 0, 0, 1.2214798, 44.805096, 0, 34.404175)
+
+[node name="@Node3D@123728" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2184545, 0, 0, 0, 1.235637, 0, 0, 0, 1.2102522, 46.976406, 0, 33.665714)
+
+[node name="@Node3D@123729" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.80658734, 0, 0, 0, 1.2166836, 0, 0, 0, 1.193845, 46.820057, 0, 35.853775)
+
+[node name="@Node3D@123730" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.78535885, 0.041007444, -0.0021398384, -0.041939594, 0.8010298, -0.041799102, 0, 0.044410303, 0.85107034, 45.38438, 0.0518229, 32.830307)
+
+[node name="@Node3D@123732" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8087552, 0.34664652, -0.17522879, -0.36305505, 0.67464703, -0.3410321, 0, 0.36806643, 0.7281277, 42.2275, 0.8752165, 32.86858)
+
+[node name="@Node3D@123733" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0554489, 0.12219967, -0.023821266, -0.10337054, 0.8601345, -0.16767225, 0, 0.17863064, 0.9163494, 41.320343, 0.22300673, 34.98687)
+
+[node name="@Node3D@123734" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7634686, 0.088394254, -0.017231332, -0.10682172, 0.8888514, -0.17327024, 0, 0.17320915, 0.88853794, 41.360676, 0.09658432, 35.606697)
+
+[node name="@Node3D@123735" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0325955, 0.23508683, -0.05869803, -0.19352078, 0.80013764, -0.19978364, 0, 0.27218205, 1.0900948, 43.720455, 0.098189354, 33.720142)
+
+[node name="@Node3D@123736" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8919173, 0.4354233, -0.25709724, -0.50283474, 0.76373667, -0.45095107, 0, 0.4202365, 0.7117181, 44.23149, 1.151453, 30.830626)
+
+[node name="@Node3D@123737" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0512927, 0.18194336, -0.03517122, -0.17765531, 0.9895385, -0.1912863, 0, 0.22966166, 1.1880571, 42.461384, 0.19094324, 34.32092)
+
+[node name="@Node3D@123738" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7739997, 0.3203015, -0.18864676, -0.4106537, 0.73676383, -0.43392903, 0, 0.38105708, 0.6469931, 42.929047, 0.98050547, 32.13586)
+
+[node name="@Node3D@123739" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8676678, 0.37189746, -0.18799308, -0.38174498, 0.7093776, -0.35858828, 0, 0.41923895, 0.8293598, 42.647552, 0.7664008, 32.702877)
+
+[node name="@Node3D@123740" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7471818, 0.17010784, -0.042473648, -0.27000123, 1.1163563, -0.27873918, 0, 0.2746914, 1.1001447, 43.86144, 0.15700722, 33.361813)
+
+[node name="@Node3D@123741" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.92793214, 0.26117256, -0.08701273, -0.26960778, 0.8622005, -0.28725228, 0, 0.357781, 1.0738956, 46.58843, 0.32472992, 30.428476)
+
+[node name="@Node3D@123742" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9166476, 0.04786268, -0.0024975562, -0.061562404, 1.1758178, -0.061356176, 0, 0.05517491, 1.0573611, 45.230587, 0.05713606, 32.88252)
+
+[node name="@Node3D@123743" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0470333, 0.054584004, -0.0041972706, -0.03975332, 0.75806797, -0.058292102, 0, 0.076454684, 0.99426585, 46.085167, 0.103971004, 31.562756)
+
+[node name="@Node3D@123744" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9916701, 0, 0, 0, 1.0936927, 0.0033133836, 0, -0.0028799004, 0.9506071, 51.882668, 0.001554966, 40.907337)
+
+[node name="@Node3D@123745" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.92229813, 0, 0, 0, 0.8421936, 0, 0, 0, 0.9778006, 53.62514, 0, 39.47766)
+
+[node name="@Node3D@123746" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9955464, -0.03942949, -0.0019942953, 0.037925553, 0.9551306, 0.048309334, 0, -0.053907674, 1.0658163, 54.253883, 0.025886536, 41.039658)
+
+[node name="@Node3D@123747" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8534567, -0.0048503345, -2.7551316e-05, 0.004276706, 0.7524977, 0.0042744065, 0, -0.006878744, 1.2109843, 53.873768, 0.003921032, 40.27865)
+
+[node name="@Node3D@123748" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8236619, -0.028589845, -0.0009774273, 0.032486603, 0.93483335, 0.031960007, 0, -0.034649666, 1.0135059, 55.386116, 0.030319214, 40.27209)
+
+[node name="@Node3D@123749" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9594983, 0, 0, 0, 0.94201636, 0, 0, 0, 0.915147, 53.30411, 0, 36.41399)
+
+[node name="@Node3D@123750" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1476661, 0.085162945, -0.0034301775, -0.0907332, 1.2207509, -0.04916918, 0, 0.045086335, 1.1193838, 50.737587, 0.08911896, 26.888788)
+
+[node name="@Node3D@123751" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8675112, 0.06437396, -0.0025928426, -0.058627263, 0.7887883, -0.03177067, 0, 0.033482708, 0.83129406, 51.200634, 0.045838833, 27.108925)
+
+[node name="@Node3D@123752" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.778201, 0.22511937, -0.057121597, -0.2411565, 0.7832128, -0.19873177, 0, 0.26636624, 1.049764, 50.25388, 0.35653305, 26.419233)
+
+[node name="@Node3D@123753" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9043823, 0.06710999, -0.0027030439, -0.08809214, 1.1852174, -0.047737967, 0, 0.033209782, 0.824518, 50.88982, 0.073071, 27.0062)
+
+[node name="@Node3D@123754" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1504482, 0.33854392, -0.057247836, -0.2362714, 0.78058267, -0.13199666, 0, 0.1661781, 0.98271996, 51.152042, 0.34642935, 25.099072)
+
+[node name="@Node3D@123755" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.029761, 0.21339214, -0.015266997, -0.2526795, 1.2131393, -0.08679324, 0, 0.056714736, 0.7927217, 53.06255, 0.041204453, 24.205112)
+
+[node name="@Node3D@124440" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1732163, -0.1803049, -0.08831384, 0.18400763, 0.9656449, 0.47297555, 0, -0.5083974, 1.0379635, 54.11761, 5.8309236, 58.023262)
+
+[node name="@Node3D@124441" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8003959, -0.13919112, -0.06478646, 0.1571668, 0.7428324, 0.34575108, 0, -0.3700309, 0.7949967, 56.327824, 5.8631887, 57.25837)
+
+[node name="@Node3D@124442" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8662307, -0.13375495, -0.06390553, 0.16717458, 0.88145185, 0.4211407, 0, -0.5090555, 1.0654584, 53.935863, 5.6750298, 57.77092)
+
+[node name="@Node3D@124443" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1282407, -0.21065255, -0.09809607, 0.18349065, 0.80762565, 0.37609282, 0, -0.3219708, 0.6914034, 56.57501, 4.466481, 54.205326)
+
+[node name="@Node3D@124444" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.055545, -0.18868198, -0.09240918, 0.23083676, 1.0415412, 0.5101068, 0, -0.47573462, 0.97135967, 53.846317, 4.184782, 54.77813)
+
+[node name="@Node3D@124445" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9450853, -0.15911901, -0.07617492, 0.17339195, 0.83784133, 0.40109912, 0, -0.46650687, 0.97446924, 54.500328, 4.6224217, 55.408833)
+
+[node name="@Node3D@124446" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.78065586, -0.12249055, -0.06167689, 0.21342695, 1.0850992, 0.5463731, 0, -0.48996052, 0.97306365, 52.01688, 4.776071, 56.63275)
+
+[node name="@Node3D@124447" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.85869557, -0.15953954, -0.072005406, 0.22517285, 1.0068579, 0.4544279, 0, -0.3196914, 0.70832765, 53.993893, 3.2968254, 52.859917)
+
+[node name="@Node3D@124448" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.91474396, -0.14420058, -0.07092317, 0.16274115, 0.83127, 0.4088493, 0, -0.5076382, 1.0321271, 52.59542, 4.5168705, 55.919594)
+
+[node name="@Node3D@124449" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0774488, -0.1765835, -0.088031515, 0.15268952, 0.7462036, 0.3720021, 0, -0.37543508, 0.75308985, 52.082428, 4.165306, 55.399605)
+
+[node name="@Node3D@124450" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.98668545, -0.18188794, -0.085838646, 0.17682575, 0.78450114, 0.37023082, 0, -0.3869404, 0.819908, 54.15582, 3.5126445, 53.24852)
+
+[node name="@Node3D@124451" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.88652825, -0.14529346, -0.07243261, 0.19091168, 0.93299776, 0.46512392, 0, -0.49867636, 1.000301, 51.814842, 3.7459414, 54.668842)
+
+[node name="@Node3D@124452" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0828061, -0.15481283, -0.077477746, 0.1701999, 0.9519912, 0.47643423, 0, -0.5353044, 1.0696232, 51.407173, 3.893484, 55.10369)
+
+[node name="@Node3D@124453" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9753862, -0.17492533, -0.07776248, 0.16554345, 0.77075475, 0.3426365, 0, -0.372112, 0.8370595, 53.27331, 2.979572, 52.483803)
+
+[node name="@Node3D@124454" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.88120455, -0.16372155, -0.073892884, 0.2157592, 0.9647649, 0.43542996, 0, -0.47174352, 1.0452236, 53.75286, 3.281212, 52.932686)
+
+[node name="@Node3D@124455" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9621241, -0.13849266, -0.054552346, 0.16981375, 1.021259, 0.40227458, 0, -0.290583, 0.73770636, 50.91441, 1.8749299, 50.888103)
+
+[node name="@Node3D@124456" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.79918927, -0.11503905, -0.045313958, 0.18111137, 1.0892028, 0.42903766, 0, -0.3855868, 0.9788936, 50.24898, 1.9296412, 51.28365)
+
+[node name="@Node3D@124457" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9294309, -0.15381545, -0.072871275, 0.13764831, 0.67927915, 0.3218138, 0, -0.47511175, 1.0028577, 52.34536, 3.7060716, 54.38525)
+
+[node name="@Node3D@124458" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2132599, -0.16032398, -0.076742634, 0.17345624, 1.0679442, 0.51119524, 0, -0.34760064, 0.72617674, 49.768055, 3.1712832, 54.17791)
+
+[node name="@Node3D@124459" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0140692, -0.1694146, -0.069230504, 0.17094739, 0.8768227, 0.35830957, 0, -0.41956475, 1.0267206, 52.450912, 2.3124242, 51.333244)
+
+[node name="@Node3D@124460" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0724266, -0.13660985, -0.0646913, 0.16313301, 1.0460637, 0.49536118, 0, -0.35146028, 0.74218535, 49.69108, 2.7095106, 53.246387)
+
+[node name="@Node3D@124461" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7558961, -0.099886484, -0.047812887, 0.13452362, 0.8282418, 0.3964564, 0, -0.48169887, 1.006323, 49.344223, 2.9364302, 53.820805)
+
+[node name="@Node3D@124462" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.87551856, -0.11309726, -0.049361218, 0.1679872, 1.0923568, 0.47675836, 0, -0.39962044, 0.9156172, 49.747562, 2.008717, 51.653618)
+
+[node name="@Node3D@124463" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2025683, -0.15891114, -0.07606635, 0.1093115, 0.6730146, 0.32215342, 0, -0.34752578, 0.72602034, 49.72471, 2.8603473, 53.548317)
+
+[node name="@Node3D@124464" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9279916, -0.119875595, -0.052319616, 0.13821302, 0.89874667, 0.39225733, 0, -0.47194332, 1.0813246, 49.57648, 2.2982078, 52.36512)
+
+[node name="@Node3D@124465" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.90481806, -0.08759219, -0.030584818, 0.08306316, 0.7647893, 0.26704365, 0, -0.2876552, 0.82381886, 47.62945, 1.1812887, 50.15417)
+
+[node name="@Node3D@124466" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.98945415, -0.11045771, -0.040286086, 0.09390002, 0.74238235, 0.27076137, 0, -0.3945306, 1.0817368, 47.422424, 1.5550475, 51.25795)
+
+[node name="@Node3D@124467" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2148577, -0.15164618, -0.0570489, 0.13880345, 0.9741123, 0.3664585, 0, -0.42631745, 1.1332281, 49.41373, 1.5936706, 50.701496)
+
+[node name="@Node3D@124468" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.054685, -0.10210027, -0.035650644, 0.12250997, 1.1279888, 0.39386305, 0, -0.25151074, 0.7203043, 46.79918, 1.2635243, 50.631004)
+
+[node name="@Node3D@124469" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.78104943, -0.0974955, -0.036677554, 0.13021098, 0.913811, 0.34377334, 0, -0.30568737, 0.8125717, 49.840572, 1.9455054, 51.478535)
+
+[node name="@Node3D@124470" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2430426, -0.1145249, -0.033457745, 0.11172391, 1.1172831, 0.32640737, 0, -0.2747629, 0.9405056, 48.924026, 1.0389326, 49.280113)
+
+[node name="@Node3D@124471" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2349324, -0.14052108, -0.051236916, 0.13283694, 1.0304109, 0.3757093, 0, -0.2993193, 0.8209055, 48.599377, 1.4171076, 50.499832)
+
+[node name="@Node3D@124472" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8650582, -0.068399884, -0.018260658, 0.07783163, 0.9188534, 0.24530551, 0, -0.24451567, 0.9158949, 45.52292, 0.86094403, 49.749943)
+
+[node name="@Node3D@124473" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0111918, -0.079954624, -0.021345416, 0.0728912, 0.86052835, 0.22973451, 0, -0.26447037, 0.9906403, 46.568428, 0.8699937, 49.4643)
+
+[node name="@Node3D@124474" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9567985, -0.092624225, -0.032341868, 0.11785522, 1.0851309, 0.3788983, 0, -0.33415675, 0.9569951, 46.938725, 1.0590892, 50.00781)
+
+[node name="@Node3D@124475" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.86898196, -0.047356144, -0.011005852, 0.06041161, 1.0517416, 0.24443108, 0, -0.2590868, 1.1148024, 43.966713, 0.6660929, 49.43135)
+
+[node name="@Node3D@124476" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8568869, -0.042299483, -0.008089804, 0.04545141, 0.88824815, 0.16987804, 0, -0.1715029, 0.89674413, 46.805492, 0.41623974, 47.46351)
+
+[node name="@Node3D@124477" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.78075945, -0.042548362, -0.009888495, 0.049492784, 0.8616493, 0.20025247, 0, -0.18321067, 0.7883215, 43.817608, 0.424968, 48.431293)
+
+[node name="@Node3D@124478" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7552192, -0.05971495, -0.015942048, 0.06835038, 0.806921, 0.21542302, 0, -0.2031983, 0.76113033, 45.579372, 0.85679483, 49.717205)
+
+[node name="@Node3D@124479" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1269268, -0.036568396, -0.0033310242, 0.026661268, 0.814858, 0.07422561, 0, -0.10189668, 1.1186345, 44.31906, 0.17315674, 46.656754)
+
+[node name="@Node3D@124480" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.002795, -0.06268875, -0.014562069, 0.06229429, 0.945468, 0.21962427, 0, -0.21705419, 0.934404, 42.98722, 0.6679127, 49.695)
+
+[node name="@Node3D@124481" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8712937, -0.014484318, -0.0010895549, 0.013049757, 0.7805817, 0.058717746, 0, -0.08468695, 1.1258111, 43.69538, 0.050214767, 45.30462)
+
+[node name="@Node3D@124482" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1568831, -0.019231936, -0.0014466852, 0.013432511, 0.8034765, 0.06043996, 0, -0.07806477, 1.0377772, 43.75954, 0.13242769, 46.383167)
+
+[node name="@Node3D@124483" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1107845, -0.006733362, -7.053633e-05, 0.0070580835, 1.1642252, 0.012196013, 0, -0.011887751, 1.1347988, 41.05102, 0.009876728, 45.04203)
+
+[node name="@Node3D@124484" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2302647, -0.037072994, -0.0048132422, 0.024788834, 0.80897933, 0.10503099, 0, -0.14282322, 1.100066, 42.165012, 0.14240456, 46.95908)
+
+[node name="@Node3D@124485" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2299433, -0.015193915, -0.00034707706, 0.013368682, 1.0816265, 0.024707772, 0, -0.028063519, 1.2285305, 42.63536, 0.017976522, 44.8521)
+
+[node name="@Node3D@124486" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.75989103, -0.0046063135, -4.825411e-05, 0.006201938, 1.0230047, 0.010716636, 0, -0.012304232, 1.1745559, 41.178104, 0.004977703, 44.50081)
+
+[node name="@Node3D@124487" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.922315, -0.016123235, -0.0014814321, 0.017993292, 1.0206732, 0.09378131, 0, -0.089791596, 0.977251, 38.86328, 0.0661912, 47.01767)
+
+[node name="@Node3D@124488" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.90689695, -0.0230986, -0.0013204066, 0.026190031, 1.0249236, 0.05858865, 0, -0.053249948, 0.9315307, 41.191097, 0.05328083, 46.13994)
+
+[node name="@Node3D@124489" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.77689314, -0.019787412, -0.0011311261, 0.01996074, 0.7811458, 0.044653356, 0, -0.044416744, 0.77700657, 41.832344, 0.033534527, 45.50853)
+
+[node name="@Node3D@124490" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9352154, -0.01634875, -0.0015021528, 0.014676629, 0.83253473, 0.076494806, 0, -0.08103406, 0.881938, 39.980038, 0.091807604, 47.083084)
+
+[node name="@Node3D@124491" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1123273, 0, 0, 0, 1.0739019, 0, 0, 0, 0.77029926, 37.611546, 0, 43.7634)
+
+[node name="@Node3D@124492" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0792923, -0.009540919, -0.00011320516, 0.010094504, 1.1417544, 0.013547174, 0, -0.012962483, 1.0924767, 37.08141, 0.00925684, 46.036026)
+
+[node name="@Node3D@124493" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2339458, 0, 0, 0, 1.2285098, 0, 0, 0, 0.91307956, 39.67911, 0, 42.32183)
+
+[node name="@Node3D@124494" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2115762, -0.004895047, -0.00011863686, 0.0038344348, 0.9485063, 0.022988098, 0, -0.023387577, 0.9649891, 39.22538, 0.029828787, 46.28428)
+
+[node name="@Node3D@124495" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1590922, 0, 0, 0, 0.9791041, 0, 0, 0, 0.9558852, 38.914417, 0, 42.45473)
+
+[node name="@Node3D@124496" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2233161, 0, 0, 0, 1.0070896, 0, 0, 0, 0.80686444, 36.72598, 0, 45.086903)
+
+[node name="@Node3D@124497" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0980372, 0, 0, 0, 0.9666854, 0, 0, 0, 0.9864856, 36.4108, 0, 43.581253)
+
+[node name="@Node3D@124498" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8574705, 0, 0, 0, 0.93266, 0, 0, 0, 1.092685, 34.066032, 0, 40.833637)
+
+[node name="@Node3D@124499" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9602902, 0, 0, 0, 1.1162078, 0, 0, 0, 1.1943991, 35.74053, 0, 42.71031)
+
+[node name="@Node3D@124500" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.068199, 0, 0, 0, 0.8150805, -0.063070476, 0, 0.094675295, 1.2235199, 33.641216, 0.05578947, 39.673016)
+
+[node name="@Node3D@124501" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.013269, -0.10864599, -0.05310951, 0.10795427, 0.8126343, 0.39724073, 0, -0.5003241, 1.0235118, 49.614513, 6.1078863, 59.99553)
+
+[node name="@Node3D@124502" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0762105, -0.14256021, -0.07288922, 0.15867376, 0.9496119, 0.48552448, 0, -0.423622, 0.8285401, 49.301327, 4.6998353, 57.324234)
+
+[node name="@Node3D@124503" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8817304, -0.1302567, -0.06418155, 0.18887722, 1.0287732, 0.5069088, 0, -0.42401475, 0.8605394, 52.013355, 5.504807, 58.07671)
+
+[node name="@Node3D@124504" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7514988, -0.09713874, -0.049739752, 0.11031364, 0.67614365, 0.3462184, 0, -0.54380256, 1.0620135, 48.19455, 4.771719, 57.78105)
+
+[node name="@Node3D@124505" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7811444, -0.10082954, -0.049786977, 0.13252577, 0.82544667, 0.40758386, 0, -0.53038925, 1.0741545, 46.89552, 3.5585651, 55.804897)
+
+[node name="@Node3D@124506" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9506728, -0.12871206, -0.064434044, 0.12753785, 0.7532346, 0.37707382, 0, -0.5452042, 1.0890883, 48.101753, 3.8745968, 56.072296)
+
+[node name="@Node3D@124507" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.92379117, -0.098245114, -0.04794472, 0.1358398, 1.0316086, 0.5034366, 0, -0.3328016, 0.6819548, 43.835445, 2.7825828, 55.045734)
+
+[node name="@Node3D@124508" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0015945, -0.10945231, -0.048995536, 0.10439386, 0.7958327, 0.35624877, 0, -0.3313861, 0.7402914, 45.616955, 2.5137906, 54.01594)
+
+[node name="@Node3D@124509" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0877277, -0.11346025, -0.049643062, 0.0930141, 0.74843407, 0.32746762, 0, -0.45581573, 1.0417764, 43.176403, 2.1736162, 53.881714)
+
+[node name="@Node3D@124510" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9478526, -0.041495014, -0.008843276, 0.044862382, 0.98025036, 0.20890762, 0, -0.24023974, 1.127269, 42.22394, 0.5337014, 49.299152)
+
+[node name="@Node3D@124511" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.89636505, -0.03387915, -0.00604692, 0.042252757, 1.083398, 0.19337027, 0, -0.17539176, 0.98266953, 39.595924, 0.29137135, 48.74521)
+
+[node name="@Node3D@124512" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1476066, -0.06462814, -0.016376186, 0.04930082, 0.82262033, 0.20844458, 0, -0.20786609, 0.8203374, 38.87713, 0.6358292, 50.548214)
+
+[node name="@Node3D@124513" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.170698, -0.028001972, -0.0036573603, 0.024732722, 1.0166746, 0.13278872, 0, -0.14729309, 1.127725, 35.91332, 0.20508575, 49.07836)
+
+[node name="@Node3D@124514" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9791425, -0.029180998, -0.0026804162, 0.036815535, 1.2249771, 0.112520084, 0, -0.086983815, 0.9469703, 38.670017, 0.10559988, 47.502384)
+
+[node name="@Node3D@124515" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8186962, -0.019582426, -0.0025576765, 0.023873297, 0.98134685, 0.12817453, 0, -0.14598718, 1.1177266, 35.933125, 0.24520779, 49.381794)
+
+[node name="@Node3D@124516" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9742371, -0.012391033, -0.0009258893, 0.014503147, 1.1339695, 0.08473306, 0, -0.06970304, 0.932825, 37.4907, 0.06159258, 47.259434)
+
+[node name="@Node3D@124517" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.93223435, -0.011856813, -0.000885971, 0.014385756, 1.1247909, 0.08404722, 0, -0.07637557, 1.0221224, 37.497204, 0.06892967, 47.35651)
+
+[node name="@Node3D@124518" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.123746, -0.00993389, -0.00011786785, 0.0071674483, 0.8106852, 0.009618963, 0, -0.010524742, 0.8870242, 35.882496, 0.004729271, 46.547726)
+
+[node name="@Node3D@124519" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8060668, -0.01939008, -0.0014485721, 0.021968912, 0.908203, 0.067849, 0, -0.086048044, 1.151809, 36.787903, 0.050973177, 47.304077)
+
+[node name="@Node3D@124520" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8280731, 0, 0, 0, 1.1584556, 0.0035095855, 0, -0.0025220574, 0.83248913, 36.15184, 0.003211975, 46.207775)
+
+[node name="@Node3D@124521" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0616441, -0.00938491, -0.00011135408, 0.0093808705, 1.0610378, 0.012589453, 0, -0.011848748, 0.99861133, 37.075264, 0.013584614, 46.40532)
+
+[node name="@Node3D@125044" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0961925, 0, 0, 0, 1.0485767, -0.07796157, 0, 0.08659551, 1.1647025, 28.921635, 0.028778076, 40.006943)
+
+[node name="@Node3D@125045" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0960749, -0.14841983, 0.053209897, 0.13161974, 0.86130446, -0.3087857, 0, 0.27934915, 0.77919614, 27.858711, 0.34551, 38.044388)
+
+[node name="@Node3D@125046" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.89293593, -0.1402962, 0.12899625, 0.19451393, 0.6708641, -0.61683035, 0, 0.77043885, 0.8379285, 27.802414, 1.0311112, 36.810314)
+
+[node name="@Node3D@125047" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1645108, 0, 0, 0, 0.89860576, -0.09448859, 0, 0.07849677, 0.7465203, 30.768213, 0.03744316, 40.037907)
+
+[node name="@Node3D@125048" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1015757, 0, 0, 0, 0.8270701, 0, 0, 0, 1.2210947, 30.837376, 0, 41.24532)
+
+[node name="@Node3D@125049" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8405115, -0.025829881, 0.001919538, 0.02688302, 0.86997634, -0.064651966, 0, 0.05825636, 0.7839151, 29.970415, 0.12619925, 38.971848)
+
+[node name="@Node3D@125050" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8862195, -0.0021070517, 0.0010415347, 0.0022141282, 0.7483923, -0.36993706, 0, 0.49189, 0.99510634, 31.739742, 0.19464397, 38.757427)
+
+[node name="@Node3D@125051" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8801127, 0, 0, 0, 0.9569202, -0.10062037, 0, 0.08145556, 0.77465904, 30.65234, 0.07316971, 39.698143)
+
+[node name="@Node3D@125052" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.909827, 0, 0, 0, 1.164719, 0, 0, 0, 1.1051257, 30.93841, 0, 41.062065)
+
+[node name="@Node3D@125053" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2423155, 0, 0, 0, 0.7802502, 0, 0, 0, 0.7945382, 32.021584, 0, 41.771088)
+
+[node name="@Node3D@125054" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8071416, 0, 0, 0, 1.0567521, 0, 0, 0, 0.935452, 34.348278, 0, 42.17106)
+
+[node name="@Node3D@125055" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.962167, 0, 0, 0, 0.8894663, 0, 0, 0, 0.8530339, 34.032097, 0, 44.511772)
+
+[node name="@Node3D@125056" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.93035114, 0, 0, 0, 0.9808697, 0.024515549, 0, -0.030361164, 1.2147534, 32.9208, 0.015009165, 47.33233)
+
+[node name="@Node3D@125057" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.85183233, -0.007851021, -0.00019621763, 0.011083225, 1.2017745, 0.0300355, 0, -0.028777836, 1.151453, 32.010445, 0.009564877, 47.285336)
+
+[node name="@Node3D@125058" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0689976, -0.009832223, -0.00067886856, 0.009881259, 1.0692317, 0.0738254, 0, -0.05864149, 0.84931934, 32.038647, 0.043195963, 48.426365)
+
+[node name="@Node3D@125059" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2176278, 0, 0, 0, 0.96429574, 0, 0, 0, 0.9667605, 34.267418, 0, 46.18251)
+
+[node name="@Node3D@125060" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2127609, 0, 0, 0, 0.96603084, 0, 0, 0, 1.1025558, 31.97149, 0, 46.239044)
+
+[node name="@Node3D@125061" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9138954, 0, 0, 0, 1.1271768, 0, 0, 0, 0.991171, 28.672676, 0, 45.53938)
+
+[node name="@Node3D@125062" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9988483, 0, 0, 0, 0.82206494, 0, 0, 0, 1.1865904, 27.102453, 4.7683716e-07, 44.368984)
+
+[node name="@Node3D@125063" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8165308, 0, 0, 0, 0.7672546, 0.0040677465, 0, -0.0051310705, 0.9678178, 28.429548, 0.0022044182, 47.147575)
+
+[node name="@Node3D@125064" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1545031, 0, 0, 0, 0.93880486, 0, 0, 0, 1.0468582, 26.70464, 4.7683716e-07, 42.982723)
+
+[node name="@Node3D@125065" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1762663, 0, 0, 0, 0.9067488, 0, 0, 0, 0.9791866, 23.947111, 4.7683716e-07, 43.611446)
+
+[node name="@Node3D@125066" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9152581, 0, 0, 0, 1.2103742, 0, 0, 0, 0.9342929, 26.614187, 4.7683716e-07, 44.435814)
+
+[node name="@Node3D@125067" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0350748, 0, 0, 0, 1.0054605, 0, 0, 0, 0.8582267, 25.29115, 0, 40.941612)
+
+[node name="@Node3D@125068" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1191874, 0, 0, 0, 0.81323016, 0, 0, 0, 0.91620135, 23.422304, 0, 43.477207)
+
+[node name="@Node3D@125069" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0130248, 0, 0, 0, 0.830039, 0, 0, 0, 1.1433432, 26.066614, 0, 40.63922)
+
+[node name="@Node3D@125070" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0975709, 0, 0, 0, 1.2364461, 0, 0, 0, 0.8845922, 24.37665, 0, 41.199272)
+
+[node name="@Node3D@125071" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0111768, 0, 0, 0, 0.88316494, -0.005024324, 0, 0.004796748, 0.84316206, 22.516066, 0.0033726692, 38.21678)
+
+[node name="@Node3D@125072" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0913918, 0, 0, 0, 1.2194861, -0.092964575, 0, 0.0868669, 1.1394984, 24.517925, 0.007942677, 38.705418)
+
+[node name="@Node3D@125073" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9473218, 0, 0, 0, 0.8906407, -0.06789583, 0, 0.09073409, 1.1902273, 24.507671, 0.0047245026, 38.747627)
+
+[node name="@Node3D@125074" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2203008, -0.08599613, 0.00048802156, 0.083723046, 1.1880071, -0.0067418506, 0, 0.006018431, 1.0605307, 23.699594, 0.055746555, 38.058403)
+
+[node name="@Node3D@125075" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8669532, 0, 0, 0, 0.76192063, -0.056648724, 0, 0.0872544, 1.1735644, 27.937754, 8.773804e-05, 40.392822)
+
+[node name="@Node3D@125076" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2451551, 0, 0, 0, 1.1159147, 0, 0, 0, 0.95023537, 27.430578, 4.7683716e-07, 42.05423)
+
+[node name="@Node3D@125077" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9297556, 0, 0, 0, 0.77276117, 0, 0, 0, 1.186483, 31.339552, 0, 43.02513)
+
+[node name="@Node3D@125078" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.84257066, 0, 0, 0, 0.9636853, 0, 0, 0, 1.1537111, 30.625395, 4.7683716e-07, 44.049675)
+
+[node name="@Node3D@125079" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0608538, -0.016867358, -0.0006897667, 0.01485717, 0.93286544, 0.03814821, 0, -0.04029737, 0.98542035, 32.86125, 0.032143116, 47.983047)
+
+[node name="@Node3D@125080" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8820475, -0.02751275, -0.0025062442, 0.028577987, 0.90865844, 0.08277326, 0, -0.09984864, 1.0961065, 32.30787, 0.12826514, 49.34602)
+
+[node name="@Node3D@125081" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.82432514, -0.007597498, -0.00018988142, 0.010632652, 1.152918, 0.028814448, 0, -0.029628936, 1.185507, 32.429768, 0.010708332, 47.176422)
+
+[node name="@Node3D@125082" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1196911, -0.0033882887, -1.0264901e-05, 0.0025688994, 0.84890866, 0.0025717893, 0, -0.0030477282, 1.006009, 34.168945, 0.000313282, 46.723724)
+
+[node name="@Node3D@125083" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8930947, -0.0142000215, -0.00058068975, 0.013473154, 0.8459646, 0.034594525, 0, -0.048519094, 1.1864719, 33.307186, 0.04796505, 48.196396)
+
+[node name="@Node3D@125084" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0931051, -0.08016723, -0.020285364, 0.085944995, 1.1013682, 0.27868813, 0, -0.25522307, 1.0086348, 32.168713, 0.51870775, 51.796406)
+
+[node name="@Node3D@125085" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.96683574, -0.09427012, -0.027841274, 0.11499687, 1.0847911, 0.32037684, 0, -0.22159566, 0.7503195, 30.719286, 0.7908642, 53.281986)
+
+[node name="@Node3D@125086" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7919579, -0.05847096, -0.013512546, 0.068844385, 0.8851859, 0.20456506, 0, -0.18681282, 0.80836904, 29.639696, 0.6239517, 52.956093)
+
+[node name="@Node3D@125087" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7562939, -0.013867611, -0.0014700019, 0.015068258, 0.81264204, 0.086142115, 0, -0.09367173, 0.88367444, 28.40011, 0.10442543, 50.116947)
+
+[node name="@Node3D@125088" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1770563, -0.026692092, -0.0033916375, 0.022814997, 0.9901002, 0.12580733, 0, -0.112151906, 0.8826324, 30.71578, 0.14518952, 50.016823)
+
+[node name="@Node3D@125089" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9899523, -0.035127643, -0.0037218833, 0.036936488, 1.0293728, 0.10906526, 0, -0.08374902, 0.79043466, 26.787418, 0.1739018, 51.204865)
+
+[node name="@Node3D@125090" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.132079, -0.02084582, -0.0010918385, 0.019167226, 1.0380715, 0.054370925, 0, -0.062810756, 1.1992084, 28.173168, 0.07123947, 49.784817)
+
+[node name="@Node3D@125091" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0632383, -0.012593842, -0.0008249084, 0.01412941, 1.1877829, 0.07780089, 0, -0.06198619, 0.9463405, 26.061207, 0.04702115, 49.942066)
+
+[node name="@Node3D@125092" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0904751, -0.038694613, -0.0040998147, 0.028891109, 0.8051583, 0.085309036, 0, -0.08662288, 0.8175585, 27.49033, 0.08610916, 50.140213)
+
+[node name="@Node3D@125093" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9051709, 0, 0, 0, 0.99521375, 0.0052763154, 0, -0.0048894086, 0.9222357, 27.90697, 0.00539732, 47.74983)
+
+[node name="@Node3D@125094" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.79311365, 0, 0, 0, 1.1005617, 0, 0, 0, 1.0998255, 25.14785, 0, 46.60601)
+
+[node name="@Node3D@125095" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0531414, 0, 0, 0, 0.89250606, 0, 0, 0, 1.0856245, 24.021, 4.7683716e-07, 44.586258)
+
+[node name="@Node3D@125096" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0386809, 0, 0, 0, 0.9840138, 0, 0, 0, 0.8356882, 22.622465, 0, 44.092926)
+
+[node name="@Node3D@125097" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9103142, 0, 0, 0, 1.0707954, 0, 0, 0, 1.1120915, 22.18907, 0, 42.383476)
+
+[node name="@Node3D@125098" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7617589, 0, 0, 0, 1.2278132, 0, 0, 0, 1.2130631, 23.796719, 0, 42.218506)
+
+[node name="@Node3D@125099" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.98227733, 0, 0, 0, 0.7754445, 0, 0, 0, 0.91908044, 20.876993, 0, 41.998875)
+
+[node name="@Node3D@125100" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0627073, 0, 0, 0, 0.9460217, 0, 0, 0, 0.8576406, 23.655731, 0, 39.765472)
+
+[node name="@Node3D@125101" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.85463935, 0, 0, 0, 1.1852111, 0, 0, 0, 1.1637626, 22.242134, 4.7683716e-07, 40.482666)
+
+[node name="@Node3D@125786" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9588453, -0.10336073, -0.052679196, 0.12298483, 0.90564454, 0.46157402, 0, -0.48714522, 0.95581716, 41.201553, 3.4514642, 57.010487)
+
+[node name="@Node3D@125787" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.805966, -0.114242315, -0.05936799, 0.122678906, 0.6814555, 0.3541301, 0, -0.57197595, 1.100658, 38.46304, 4.900035, 60.48904)
+
+[node name="@Node3D@125788" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7545012, -0.098564275, -0.050838556, 0.1154906, 0.698296, 0.36017472, 0, -0.4486211, 0.8697732, 38.67865, 3.7340875, 58.193504)
+
+[node name="@Node3D@125789" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1912162, -0.19638404, -0.09003017, 0.16822957, 0.8432213, 0.38656586, 0, -0.31638253, 0.6901295, 32.713524, 3.8934393, 60.46449)
+
+[node name="@Node3D@125790" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0848383, -0.10724367, -0.045750305, 0.08120663, 0.69497865, 0.2964789, 0, -0.34034052, 0.7977951, 36.481216, 1.9675603, 55.041092)
+
+[node name="@Node3D@125791" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.99828434, -0.18272462, -0.08336139, 0.18109831, 0.8189507, 0.37361613, 0, -0.311814, 0.68348306, 32.85615, 4.2611437, 61.182125)
+
+[node name="@Node3D@125792" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0144247, -0.15110953, -0.05456023, 0.18007007, 1.069424, 0.38613063, 0, -0.36613032, 1.0140313, 29.222795, 2.008048, 57.477062)
+
+[node name="@Node3D@125793" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9866772, -0.14458935, -0.060565785, 0.11836571, 0.68715745, 0.28783748, 0, -0.34149954, 0.8152654, 30.941174, 2.565291, 58.215935)
+
+[node name="@Node3D@125794" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.95733416, -0.056676142, -0.020682024, 0.061873756, 0.9223107, 0.33656582, 0, -0.3967107, 1.0871292, 24.24568, 1.6572051, 58.37458)
+
+[node name="@Node3D@125795" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1927755, -0.08279079, -0.016957372, 0.05795384, 0.80132955, 0.1641299, 0, -0.17579421, 0.8582781, 28.68211, 0.40925455, 52.23464)
+
+[node name="@Node3D@125796" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1263964, -0.02810684, -0.0018405787, 0.021931538, 0.87516505, 0.057310253, 0, -0.049420435, 0.7546823, 23.665648, 0.06614494, 50.84602)
+
+[node name="@Node3D@125797" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1504003, -0.007119016, -4.672832e-05, 0.006929599, 1.1197432, 0.0073498525, 0, -0.006935581, 1.0566294, 22.7216, 0.0031118393, 49.023815)
+
+[node name="@Node3D@125798" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.040335, -0.10777898, -0.051726006, 0.13748486, 1.0786303, 0.5176634, 0, -0.49754834, 1.0367175, 37.58514, 2.6680636, 56.320683)
+
+[node name="@Node3D@125799" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9565568, -0.10907687, -0.057586484, 0.10454008, 0.71694165, 0.37850508, 0, -0.4291388, 0.81284904, 40.430782, 4.593478, 59.359314)
+
+[node name="@Node3D@125800" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1771494, -0.17868887, -0.08665379, 0.17329745, 0.9242723, 0.44821873, 0, -0.53369707, 1.1005372, 34.828297, 3.6367002, 59.12666)
+
+[node name="@Node3D@125801" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0767152, -0.10417897, -0.033610605, 0.1156426, 1.0825194, 0.34924644, 0, -0.26230866, 0.8130483, 30.182268, 1.3676791, 55.344913)
+
+[node name="@Node3D@125802" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8755068, -0.10863156, -0.034932323, 0.09756827, 0.71265125, 0.22916512, 0, -0.2734916, 0.8504964, 28.247025, 1.3275232, 55.92146)
+
+[node name="@Node3D@125803" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.95948213, -0.18570717, -0.08009922, 0.16747887, 0.72957516, 0.31468034, 0, -0.40656275, 0.94260126, 30.744143, 3.7088132, 60.94328)
+
+[node name="@Node3D@125804" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1777755, -0.19453077, -0.07543938, 0.18246011, 0.960278, 0.3723975, 0, -0.30047384, 0.77481294, 29.239883, 2.254416, 58.12357)
+
+[node name="@Node3D@125805" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0208015, -0.16932772, -0.06892576, 0.1819775, 0.94112295, 0.38308915, 0, -0.44247153, 1.0870056, 28.580355, 3.123467, 60.572056)
+
+[node name="@Node3D@125806" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1864268, -0.08350775, -0.031487983, 0.07030174, 0.87447226, 0.32973433, 0, -0.3647729, 0.9673964, 23.62727, 1.6628747, 58.503876)
+
+[node name="@Node3D@125807" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0751777, -0.07567738, -0.028535413, 0.07730836, 0.96162647, 0.36259726, 0, -0.41426426, 1.09865, 23.578325, 1.5034027, 58.091877)
+
+[node name="@Node3D@125808" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7779329, -0.034170512, -0.008032984, 0.05498731, 1.1862919, 0.27887976, 0, -0.26402193, 1.1230901, 22.067339, 0.8136444, 56.175392)
+
+[node name="@Node3D@125809" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9232538, -0.064984076, -0.024503324, 0.068026416, 0.8461699, 0.31906244, 0, -0.35013354, 0.9285721, 24.087027, 1.511303, 58.01157)
+
+[node name="@Node3D@125810" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.97433454, -0.068579435, -0.025859017, 0.09143982, 1.1374055, 0.42887768, 0, -0.3184336, 0.8445022, 23.218386, 1.4329782, 57.977238)
+
+[node name="@Node3D@125811" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.83523536, -0.06166617, -0.014250954, 0.087511845, 1.125208, 0.2600338, 0, -0.23180306, 1.0030491, 29.786528, 0.647594, 53.010094)
+
+[node name="@Node3D@125812" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0745327, -0.122486316, -0.04518245, 0.11022709, 0.8511677, 0.31397668, 0, -0.35922813, 0.973841, 25.364733, 2.0728583, 59.18666)
+
+[node name="@Node3D@125813" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1681674, -0.11500414, -0.043326583, 0.10343264, 0.9200445, 0.34661695, 0, -0.34121588, 0.905708, 32.838886, 1.6257915, 55.22275)
+
+[node name="@Node3D@125814" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1123577, -0.112349436, -0.045411382, 0.091719486, 0.78057605, 0.315507, 0, -0.33370498, 0.8255984, 34.079823, 2.1458206, 56.14145)
+
+[node name="@Node3D@125815" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2283204, -0.12839322, -0.0586406, 0.111607134, 0.8834445, 0.4034926, 0, -0.40618527, 0.8893399, 38.706802, 2.3799753, 55.417973)
+
+[node name="@Node3D@125816" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1955043, -0.09820786, -0.035601083, 0.08668952, 0.9327191, 0.33811763, 0, -0.38689202, 1.0672663, 42.158688, 1.1936398, 51.65902)
+
+[node name="@Node3D@125817" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1305819, -0.09222543, -0.031704605, 0.06845098, 0.7504458, 0.25798294, 0, -0.3911435, 1.1377963, 40.15828, 1.479147, 52.960682)
+
+[node name="@Node3D@125818" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.98441815, -0.08831948, -0.036934912, 0.0967803, 0.9181496, 0.38396713, 0, -0.4793182, 1.146155, 41.262028, 1.709518, 53.278687)
+
+[node name="@Node3D@125819" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.76639616, -0.06251755, -0.021491842, 0.0750089, 0.8223419, 0.28269887, 0, -0.39544988, 1.150323, 40.294186, 1.0965009, 51.817745)
+
+[node name="@Node3D@125820" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2248186, -0.045500413, -0.0051196716, 0.04600195, 1.2228376, 0.13759275, 0, -0.11305398, 1.0047525, 34.006134, 0.18925619, 49.438477)
+
+[node name="@Node3D@125821" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8978002, -0.048097227, -0.009274207, 0.059668824, 1.0738728, 0.2070664, 0, -0.21826221, 1.1319357, 33.221478, 0.39335823, 50.9143)
+
+[node name="@Node3D@125822" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.83386827, -0.067768924, -0.020354321, 0.07809545, 0.8814195, 0.26473337, 0, -0.35141814, 1.170033, 35.63035, 0.7070875, 51.700153)
+
+[node name="@Node3D@125823" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.79888797, -0.13593532, -0.060324974, 0.16341731, 0.80237967, 0.35607767, 0, -0.35011396, 0.7889412, 32.447678, 3.2426538, 59.163948)
+
+[node name="@Node3D@125824" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9113587, -0.1290685, -0.052152153, 0.17348787, 1.0530719, 0.42551023, 0, -0.44251505, 1.0951562, 26.690414, 2.4010339, 59.572456)
+
+[node name="@Node3D@125825" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0342498, -0.100843236, -0.029782549, 0.110283434, 1.0403281, 0.30724537, 0, -0.2553943, 0.8647612, 30.265612, 0.9145603, 53.854042)
+
+[node name="@Node3D@125826" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8226466, -0.06664985, -0.013698768, 0.08628955, 1.0218871, 0.21003191, 0, -0.24601448, 1.1969564, 25.245409, 0.62170553, 54.417976)
+
+[node name="@Node3D@125827" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1347433, -0.082266666, -0.014756206, 0.055689204, 0.74420387, 0.13348816, 0, -0.16161439, 0.9010091, 23.608353, 0.5069232, 54.450806)
+
+[node name="@Node3D@125828" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8081219, -0.018911146, -0.0074950126, 0.026675453, 0.9851653, 0.39044836, 0, -0.4525038, 1.1417413, 21.500654, 1.3737359, 57.966183)
+
+[node name="@Node3D@125829" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0143808, -0.017695291, -0.0026554386, 0.018863564, 1.057537, 0.15869898, 0, -0.121107414, 0.8070347, 20.96595, 0.31227112, 53.994946)
+
+[node name="@Node3D@125830" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.925224, -0.040640242, -0.009553922, 0.049148012, 1.0603154, 0.24926451, 0, -0.2141561, 0.9109722, 21.97391, 0.6990843, 55.70649)
+
+[node name="@Node3D@125831" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9708303, 0.0058514858, 0.000532501, -0.0059812265, 0.9842052, 0.08956533, 0, -0.08561674, 0.94081545, 17.180412, 0.10448885, 52.456833)
+
+[node name="@Node3D@125832" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0172862, -0.023943419, -0.007342728, 0.028602567, 1.1107751, 0.3406414, 0, -0.35316417, 1.1516098, 22.209435, 1.259294, 57.572594)
+
+[node name="@Node3D@125833" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1360399, 0.006847253, 0.0006231185, -0.0061744098, 1.0159934, 0.09245813, 0, -0.075682215, 0.8316481, 16.651245, 0.04808712, 51.801872)
+
+[node name="@Node3D@125834" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.041391, 0.08923192, 0.032978922, -0.087529615, 0.8987589, 0.33216923, 0, -0.28194925, 0.76287746, 15.824335, 1.2778859, 56.94724)
+
+[node name="@Node3D@125835" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0411457, -0.007423165, -0.00054176454, 0.007995627, 1.1154954, 0.08141215, 0, -0.061067782, 0.8367404, 19.560417, 0.08423567, 52.328712)
+
+[node name="@Node3D@125836" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.81598765, 0, 0, 0, 0.8798479, 0.010771845, 0, -0.010902882, 0.89055103, 17.49496, 0.005318165, 50.33496)
+
+[node name="@Node3D@125837" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0091507, 0, 0, 0, 1.0575914, 0, 0, 0, 1.2427933, 18.515694, -4.7683716e-07, 46.967163)
+
+[node name="@Node3D@125838" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.82226616, 0.0021731385, 0.0001333639, -0.0029930526, 1.1282537, 0.06924009, 0, -0.075499095, 1.230243, 13.533941, 0.07570362, 51.068813)
+
+[node name="@Node3D@125839" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2457348, 0, 0, 0, 0.8430691, 0, 0, 0, 0.8240181, 18.34761, 0, 43.661938)
+
+[node name="@Node3D@125840" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0038036, 0, 0, 0, 1.0476973, 0, 0, 0, 1.0997534, 11.900858, 0, 46.18608)
+
+[node name="@Node3D@125841" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0941167, 0, 0, 0, 1.0690558, 0, 0, 0, 0.91701055, 14.88066, 4.7683716e-07, 42.04033)
+
+[node name="@Node3D@125842" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7766193, 0, 0, 0, 1.1685362, 0, 0, 0, 0.92386144, 15.322564, 0, 45.087402)
+
+[node name="@Node3D@125843" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1476095, 0, 0, 0, 1.0849558, 0, 0, 0, 1.1844519, 12.33105, 0, 44.7153)
+
+[node name="@Node3D@125844" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8049564, 0, 0, 0, 0.9058595, 0, 0, 0, 1.0383646, 14.66147, 0, 46.70652)
+
+[node name="@Node3D@125845" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0252974, 0, 0, 0, 1.0756633, 0, 0, 0, 0.80288017, 16.574057, 0, 44.38247)
+
+[node name="@Node3D@125846" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1379555, 0, 0, 0, 0.7524522, 0, 0, 0, 0.86911166, 17.374641, 0, 45.472824)
+
+[node name="@Node3D@125847" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.91785896, 0, 0, 0, 1.1197882, 0, 0, 0, 0.94595164, 22.999395, 0, 44.58564)
+
+[node name="@Node3D@125848" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.79093874, 0, 0, 0, 1.2446475, 0, 0, 0, 0.81822103, 22.702757, 0, 46.45261)
+
+[node name="@Node3D@125849" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1262835, -0.02810402, -0.0018403942, 0.020188553, 0.80561227, 0.052755583, 0, -0.06307761, 0.9632363, 24.388231, 0.054147243, 50.387016)
+
+[node name="@Node3D@125850" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.84060985, 0, 0, 0, 1.1879655, 0, 0, 0, 1.2102836, 20.049242, 0, 47.5697)
+
+[node name="@Node3D@125851" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0197837, 0, 0, 0, 1.1504006, 0, 0, 0, 1.0036769, 19.673918, -4.7683716e-07, 43.3117)
+
+[node name="@Node3D@125852" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0077516, 0, 0, 0, 0.8634197, 0, 0, 0, 0.7976321, 19.647543, 0, 39.661507)
+
+[node name="@Node3D@125853" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.78590584, 0, 0, 0, 1.0134779, 0, 0, 0, 1.1882474, 19.89549, 0, 38.602306)
+
+[node name="@Node3D@125854" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0568632, 0, 0, 0, 1.0754687, 0, 0, 0, 0.88446563, 17.451193, 4.7683716e-07, 36.26005)
+
+[node name="@Node3D@125855" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1335912, 0, 0, 0, 0.9306745, -0.0016447161, 0, 0.0015741644, 0.89075226, 19.093699, 0.001364708, 36.45522)
+
+[node name="@Node3D@125856" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0198802, 0, 0, 0, 0.9930935, 0, 0, 0, 1.2207818, 13.645483, 1.4305115e-06, 35.022724)
+
+[node name="@Node3D@125857" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2027903, 0, 0, 0, 0.9817538, 0, 0, 0, 0.9661561, 12.742558, 0, 33.5388)
+
+[node name="@Node3D@125858" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8687444, -0.0055693043, 0.0012350202, 0.0075985733, 1.1297312, -0.25052336, 0, 0.20308745, 0.91581964, 16.426744, 0.07336521, 33.768784)
+
+[node name="@Node3D@125859" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0157006, -0.4773226, 0.33141664, 0.3787056, 0.5437284, -0.3775238, 0, 0.7095906, 1.0219873, 17.187927, 1.7184706, 30.683117)
+
+[node name="@Node3D@125860" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1845243, -0.06402834, 0, 0.05837513, 1.07994, 0, 0, 0, 1.1601222, 13.797225, 0.017969131, 33.206463)
+
+[node name="@Node3D@125861" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7732594, -0.0036891447, 0.00040234634, 0.0048817513, 1.0112067, -0.11028446, 0, 0.117209844, 1.0747061, 11.431593, 0.074858665, 30.253439)
+
+[node name="@Node3D@125862" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.82853943, 0, 0, 0, 0.79524535, -0.0038146027, 0, 0.00561204, 1.1699642, 11.292397, 0.0036187172, 31.719906)
+
+[node name="@Node3D@125863" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0975316, 0, 0, 0, 0.9996076, 0, 0, 0, 1.0347064, 13.517386, 9.536743e-07, 35.572273)
+
+[node name="@Node3D@125864" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8201682, -0.011597006, 0.00010237489, 0.015142339, 1.0708194, -0.009452873, 0, 0.008746135, 0.99076027, 8.904399, -0.03131056, 33.793457)
+
+[node name="@Node3D@125865" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.93998635, 0, 0, 0, 0.8125305, 0, 0, 0, 0.832214, 11.266454, 4.7683716e-07, 37.72694)
+
+[node name="@Node3D@125866" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7844149, 0, 0, 0, 0.8001732, 0, 0, 0, 1.1331438, 14.045265, 9.536743e-07, 37.174923)
+
+[node name="@Node3D@125867" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8741205, 0, 0, 0, 1.1452268, 0, 0, 0, 0.935092, 11.079795, 0, 41.412205)
+
+[node name="@Node3D@125868" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8733648, 0, 0, 0, 0.92825204, 0, 0, 0, 1.0875378, 12.317271, 0, 44.818405)
+
+[node name="@Node3D@125869" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.90500844, 0, 0, 0, 1.1169834, 0, 0, 0, 1.2384027, 11.886265, 0, 44.887432)
+
+[node name="@Node3D@125870" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1896839, 0, 0, 0, 1.120481, 0, 0, 0, 1.0271245, 14.203789, 4.7683716e-07, 45.52706)
+
+[node name="@Node3D@125871" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.7869795, 0, 0, 0, 1.1020646, 0, 0, 0, 0.7546568, 16.141459, 0, 47.681328)
+
+[node name="@Node3D@125872" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.841633, 0, 0, 0, 0.9793397, 0, 0, 0, 1.2298594, 16.032452, 0, 48.352497)
+
+[node name="@Node3D@125873" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.86687875, 0, 0, 0, 0.97450805, 0, 0, 0, 0.9402682, 14.408029, 9.536743e-07, 48.26627)
+
+[node name="@Node3D@125874" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.880081, 0.053417515, 0.006360821, -0.060936, 0.98991543, 0.1178766, 0, -0.13445543, 1.1291426, 14.577954, 0.1408267, 52.011444)
+
+[node name="@Node3D@125875" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.815441, 0.067926146, 0.016089631, -0.095070854, 1.0806746, 0.25597882, 0, -0.27054211, 1.1421571, 13.3106365, 0.4246874, 53.40667)
+
+[node name="@Node3D@125876" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2054168, 0.13072494, 0.06367086, -0.12741178, 0.949596, 0.46251, 0, -0.337022, 0.69195205, 8.939153, 1.9914598, 56.836628)
+
+[node name="@Node3D@125877" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8373886, 0.07897601, 0.037860274, -0.12641598, 1.0899192, 0.5224958, 0, -0.4281254, 0.8930638, 13.611529, 2.1288238, 58.48147)
+
+[node name="@Node3D@125878" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.91777885, 0.090329275, 0.03447064, -0.080164954, 0.71096927, 0.27131364, 0, -0.35293704, 0.92486095, 14.555305, 1.506536, 57.264744)
+
+[node name="@Node3D@125879" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8121077, 0.07987742, 0.025299994, -0.09716188, 0.897772, 0.28435603, 0, -0.37500784, 1.1839789, 11.883296, 1.3605089, 56.207996)
+
+[node name="@Node3D@125880" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9606215, 0.17759126, 0.107319444, -0.16217275, 0.6425648, 0.3883057, 0, -0.5181823, 0.8574834, 11.883936, 4.813998, 62.913383)
+
+[node name="@Node3D@125881" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9932166, 0.18761156, 0.10389709, -0.23100111, 0.93589836, 0.51828957, 0, -0.5752041, 1.0386714, 12.381678, 4.379615, 62.35241)
+
+[node name="@Node3D@125882" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8625774, 0.08816141, 0.037387017, -0.09850669, 0.8168878, 0.3464214, 0, -0.320499, 0.7557609, 16.047377, 2.2284007, 59.3286)
+
+[node name="@Node3D@125883" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0750074, 0.11543377, 0.06523811, -0.13515548, 0.95397127, 0.5391428, 0, -0.5903315, 1.0445458, 16.69094, 3.8577394, 62.795162)
+
+[node name="@Node3D@125884" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0742787, 0.023898829, 0.016773101, -0.02856288, 0.8602126, 0.6037297, 0, -0.6084365, 0.8669191, 22.21234, 4.561419, 64.76082)
+
+[node name="@Node3D@125885" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0371958, -0.048678946, -0.020308353, 0.05689831, 1.032603, 0.4307913, 0, -0.34695414, 0.83164597, 24.071129, 2.414526, 60.330914)
+
+[node name="@Node3D@125886" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2340474, -0.07190034, -0.048581854, 0.06762853, 0.7969042, 0.5384548, 0, -0.6123504, 0.9062686, 25.313192, 5.090053, 65.40574)
+
+[node name="@Node3D@125887" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0041058, -0.20371847, -0.09031299, 0.21562202, 0.8882123, 0.39376453, 0, -0.44005135, 0.99262124, 30.19082, 4.5896745, 63.192688)
+
+[node name="@Node3D@125888" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.9414465, -0.19458613, -0.14450656, 0.27867654, 0.869021, 0.6453659, 0, -0.65466774, 0.88154644, 31.077253, 6.224474, 65.43472)
+
+[node name="@Node3D@125889" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.8441362, -0.19628601, -0.09244458, 0.23066185, 0.8118855, 0.3823727, 0, -0.402153, 0.8538846, 31.335442, 5.109109, 63.745655)
+
+[node name="@Node3D@125890" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.94039875, -0.15503424, -0.0710738, 0.1864512, 0.9345541, 0.4284364, 0, -0.3618866, 0.7893881, 32.770725, 3.4439578, 59.477497)
+
+[node name="@Node3D@125891" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8521339, -0.12270226, -0.049889956, 0.1756757, 1.0469416, 0.4256798, 0, -0.4283533, 1.053517, 27.40427, 2.8043437, 60.288574)
+
+[node name="@Node3D@125892" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2114629, -0.20306535, -0.08650527, 0.20907383, 1.055723, 0.44973505, 0, -0.4004829, 0.94010687, 28.537271, 3.9331236, 62.483982)
+
+[node name="@Node3D@125893" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0473722, -0.006349149, -0.0028082714, 0.0051301573, 0.70781136, 0.31306973, 0, -0.3597445, 0.81333715, 21.87258, 2.333692, 60.29394)
+
+[node name="@Node3D@125894" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2340192, 0.007196416, 0.0030852458, -0.0047976444, 0.6949526, 0.29793993, 0, -0.39865544, 0.92987424, 22.784746, 2.5840058, 60.887737)
+
+[node name="@Node3D@125895" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.91721594, 0.036382645, 0.017450092, -0.045326315, 0.92898303, 0.4455652, 0, -0.5258949, 1.0964668, 19.66098, 2.8011818, 61.19458)
+
+[node name="@Node3D@125896" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1526445, -0.026973441, -0.010690324, 0.019966403, 0.7373898, 0.29224804, 0, -0.4038148, 1.018891, 21.608633, 1.6029863, 58.537582)
+
+[node name="@Node3D@125897" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2216723, 0.08888939, 0.03415212, -0.07628949, 0.9136347, 0.35102686, 0, -0.30219883, 0.78654766, 15.089046, 1.3231411, 56.91443)
+
+[node name="@Node3D@125898" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2422632, 0.071484506, 0.026591942, -0.06290438, 0.9602737, 0.35721785, 0, -0.35026562, 0.94158465, 17.89014, 0.94224834, 56.43778)
+
+[node name="@Node3D@125899" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.174037, 0.07445491, 0.014936999, -0.08049942, 1.2202377, 0.24480172, 0, -0.16126682, 0.80384994, 16.077274, 0.5103431, 54.627483)
+
+[node name="@Node3D@125900" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.88355905, -0.0063571204, -0.0011546803, 0.008437373, 1.1352346, 0.20619918, 0, -0.17958589, 0.9887145, 18.58375, 0.3067994, 54.036724)
+
+[node name="@Node3D@125901" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0978925, 0, 0, 0, 0.99634194, 0.031516336, 0, -0.024698364, 0.78080183, 15.285835, 0.010667324, 50.237816)
+
+[node name="@Node3D@125902" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.231234, 0, 0, 0, 1.1791319, 0, 0, 0, 0.80052507, 16.166113, 0, 43.250725)
+
+[node name="@Node3D@125903" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.86984646, 0, 0, 0, 1.0312091, 0, 0, 0, 0.98088485, 14.735213, 0, 43.60271)
+
+[node name="@Node3D@125904" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0133117, 0, 0, 0, 1.1718031, 0, 0, 0, 1.180829, 14.038747, 4.7683716e-07, 46.47353)
+
+[node name="@Node3D@125905" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0913162, 0, 0, 0, 0.81394863, 0, 0, 0, 0.91702974, 17.210754, 0, 42.19113)
+
+[node name="@Node3D@125906" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.76190436, 0, 0, 0, 0.7703365, 0, 0, 0, 1.0583187, 16.912834, 4.7683716e-07, 38.788593)
+
+[node name="@Node3D@125907" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.79056734, 0, 0, 0, 1.2431176, 0, 0, 0, 1.0473063, 16.267353, 0, 39.683903)
+
+[node name="@Node3D@125908" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2431514, 0, 0, 0, 1.146939, 0, 0, 0, 0.9038508, 15.57667, 0, 41.0538)
+
+[node name="@Node3D@125909" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0602458, 0, 0, 0, 0.75913453, 0, 0, 0, 0.9605725, 14.819765, 0, 43.72079)
+
+[node name="@Node3D@125910" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8434946, 0, 0, 0, 1.1638541, 0, 0, 0, 0.80973125, 17.0084, 4.7683716e-07, 41.641453)
+
+[node name="@Node3D@125911" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9310533, 0, 0, 0, 1.1318908, 0, 0, 0, 0.93515515, 24.985611, 0, 43.183567)
+
+[node name="@Node3D@125912" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7636511, 0, 0, 0, 1.0999963, 0, 0, 0, 0.79405594, 23.528036, 9.536743e-07, 43.917374)
+
+[node name="@Node3D@125913" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2296791, 0, 0, 0, 0.9765545, 0, 0, 0, 0.84662676, 24.96476, 0, 47.87245)
+
+[node name="@Node3D@125914" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1218376, 0, 0, 0, 1.1869794, 0, 0, 0, 1.2223417, 31.183655, 4.7683716e-07, 46.103783)
+
+[node name="@Node3D@125915" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8438159, 0, 0, 0, 1.0505764, 0, 0, 0, 1.1192975, 31.486958, 0, 45.970455)
+
+[node name="@Node3D@125916" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0576688, 0, 0, 0, 1.1403315, 0, 0, 0, 1.0275888, 26.91557, 0, 44.101795)
+
+[node name="@Node3D@125917" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.80194837, -0.0017215697, 0, 0.0016860891, 0.7854206, 0, 0, 0, 0.78280306, 24.807308, 0.0005464554, 38.86414)
+
+[node name="@Node3D@125918" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9923891, 0, 0, 0, 0.92130744, 0, 0, 0, 1.0743134, 17.773216, 0, 40.42581)
+
+[node name="@Node3D@125919" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.96957296, 0, 0, 0, 1.1351836, 0, 0, 0, 1.079928, 18.68918, 0, 38.36977)
+
+[node name="@Node3D@125920" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.2125527, 0, 0, 0, 1.2092556, 0, 0, 0, 1.1876622, 16.602058, 0, 38.97319)
+
+[node name="@Node3D@125921" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0135336, 0, 0, 0, 0.9398848, 0, 0, 0, 0.81039596, 12.975156, 0, 37.505898)
+
+[node name="@Node3D@125922" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0098318, 0, 0, 0, 1.0029268, 0, 0, 0, 1.0931518, 16.413832, 0, 42.20201)
+
+[node name="@Node3D@125923" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1090724, 0, 0, 0, 1.1900644, 0, 0, 0, 1.1655633, 15.822365, 0, 42.04122)
+
+[node name="@Node3D@125924" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.93911594, 0, 0, 0, 1.1390424, 0, 0, 0, 0.8054516, 11.9749565, 0, 37.27831)
+
+[node name="@Node3D@125925" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.84386885, 0, 0, 0, 1.1006013, 0, 0, 0, 1.212554, 12.672727, 4.7683716e-07, 42.92631)
+
+[node name="@Node3D@125926" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.218596, 0, 0, 0, 1.0870922, 0, 0, 0, 0.9534299, 13.141713, 0, 42.583786)
+
+[node name="@Node3D@125927" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7877065, 0, 0, 0, 1.1793327, 0, 0, 0, 0.9050203, 11.234313, 4.7683716e-07, 45.55879)
+
+[node name="@Node3D@125928" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0886575, 0, 0, 0, 0.8330782, 0, 0, 0, 1.2282451, 8.413036, 9.536743e-07, 45.979332)
+
+[node name="@Node3D@125929" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.7628357, 0, 0, 0, 1.1078305, 0, 0, 0, 0.9292511, 12.614199, 4.7683716e-07, 47.923515)
+
+[node name="@Node3D@125930" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1260285, 0, 0, 0, 0.9515504, 0, 0, 0, 0.93787956, 13.526354, 9.536743e-07, 46.0888)
+
+[node name="@Node3D@125931" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.82989967, 0, 0, 0, 1.0196363, 0, 0, 0, 0.94465137, 10.522159, 0, 47.42583)
+
+[node name="@Node3D@125932" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.86525196, 0, 0, 0, 0.793516, 0, 0, 0, 1.1051155, 11.332904, 4.7683716e-07, 41.35843)
+
+[node name="@Node3D@125933" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.1469463, 0, 0, 0, 1.2468991, 0, 0, 0, 1.0286049, 12.1876335, 4.7683716e-07, 39.667583)
+
+[node name="@Node3D@125934" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9184106, -0.4001766, -0.008915543, 0.49546608, 1.1365372, 0.025320936, 0, -0.023688069, 1.0632455, 7.072126, -0.3329153, 36.281673)
+
+[node name="@Node3D@125935" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.0044526, -0.014612528, 0, 0.01362609, 0.93664575, 0, 0, 0, 1.2260052, 10.029256, -0.003865242, 36.645218)
+
+[node name="@Node3D@125936" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.8008343, 0, 0, 0, 1.2438507, 0, 0, 0, 0.8159544, 13.233959, 9.536743e-07, 38.623276)
+
+[node name="@Node3D@125937" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(0.97188103, 0, 0, 0, 0.8834738, 0, 0, 0, 0.91104746, 12.472859, 4.7683716e-07, 36.327633)
+
+[node name="@Node3D@125938" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(0.9029153, 0, 0, 0, 1.2488146, 0, 0, 0, 1.1691943, 10.476412, 9.536743e-07, 38.255737)
+
+[node name="@Node3D@125939" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1022696, -0.0160789, -0.00020600809, 0.011950826, 0.8191399, 0.010495086, 0, -0.01390173, 1.085028, 9.097947, -0.0117611885, 37.672485)
+
+[node name="@Node3D@125940" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_6fmg8")]
+transform = Transform3D(1.1755645, 0, 0, 0, 1.1449792, -0.0054921927, 0, 0.0055399723, 1.15494, 11.403458, 0.0021657944, 32.022667)
+
+[node name="@Node3D@125941" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.2016367, 0, 0, 0, 1.1371161, 0, 0, 0, 1.0715168, 11.726808, 9.536743e-07, 37.53851)
+
+[node name="@Node3D@125942" type="Node3D" parent="ScatterScene3D/ObjectParent" instance=ExtResource("5_koa53")]
+transform = Transform3D(1.0064353, 0, 0, 0, 0.8641394, 0, 0, 0, 0.93472904, 14.619006, 4.7683716e-07, 34.989155)
+
 [node name="covered bridge 1" parent="." instance=ExtResource("5_7earj")]
 transform = Transform3D(0.840945, 0, -0.541121, 0, 1, 0, 0.541121, 0, 0.840945, -35.5104, -0.211959, -9.13686)
 
@@ -7252,6 +8689,30 @@ transform = Transform3D(0.840945, 0, -0.541121, 0, 1, 0, 0.541121, 0, 0.840945, 
 [node name="covered bridge 34" parent="." instance=ExtResource("5_7earj")]
 transform = Transform3D(0.840945, 0, -0.541121, 0, 1, 0, 0.541121, 0, 0.840945, 65.4031, -0.211959, 55.7977)
 
+[node name="covered bridge 35" parent="." instance=ExtResource("5_7earj")]
+transform = Transform3D(0.4577192, 0, -0.8890969, 0, 1, 0, 0.8890969, 0, 0.4577192, 26.15992, 9.788041, -30.649023)
+
+[node name="covered bridge 36" parent="." instance=ExtResource("5_7earj")]
+transform = Transform3D(0.4577192, 0, -0.8890969, 0, 1, 0, 0.8890969, 0, 0.4577192, 28.4485, 9.788041, -26.203558)
+
+[node name="covered bridge 37" parent="." instance=ExtResource("5_7earj")]
+transform = Transform3D(0.4577192, 0, -0.8890969, 0, 1, 0, 0.8890969, 0, 0.4577192, 30.737165, 9.788041, -21.758038)
+
+[node name="covered bridge 38" parent="." instance=ExtResource("5_7earj")]
+transform = Transform3D(0.4577192, 0, -0.8890969, 0, 1, 0, 0.8890969, 0, 0.4577192, 33.025692, 9.788041, -17.312485)
+
+[node name="covered bridge 39" parent="." instance=ExtResource("5_7earj")]
+transform = Transform3D(0.4577192, 0, -0.8890969, 0, 1, 0, 0.8890969, 0, 0.4577192, 35.314404, 9.788041, -12.867051)
+
+[node name="covered bridge 40" parent="." instance=ExtResource("5_7earj")]
+transform = Transform3D(0.4577192, 0, -0.8890969, 0, 1, 0, 0.8890969, 0, 0.4577192, 37.60293, 9.788041, -8.421497)
+
+[node name="covered bridge 41" parent="." instance=ExtResource("5_7earj")]
+transform = Transform3D(0.4577192, 0, -0.8890969, 0, 1, 0, 0.8890969, 0, 0.4577192, 39.8915, 9.788041, -3.9760303)
+
+[node name="covered bridge 42" parent="." instance=ExtResource("5_7earj")]
+transform = Transform3D(0.4577192, 0, -0.8890969, 0, 1, 0, 0.8890969, 0, 0.4577192, 42.180084, 9.788041, 0.4694357)
+
 [node name="covered bridge 15" parent="." instance=ExtResource("5_7earj")]
 transform = Transform3D(0.984856, 0, 0.173374, 0, 1, 0, -0.173374, 0, 0.984856, -20.1947, -2.85908, -30.8876)
 
@@ -7295,21 +8756,25 @@ transform = Transform3D(0.96644, 0.173018, 0.189892, -0.134568, 0.970616, -0.199
 transform = Transform3D(0.935614, -0.222956, -0.273709, 0.247815, 0.966983, 0.0594227, 0.251423, -0.123426, 0.959975, -28.6122, 4.99936, 59.6)
 use_collision = true
 size = Vector3(17.9602, 0.133728, 1)
+material = ExtResource("7_jhmcy")
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="."]
 transform = Transform3D(0.970837, -0.224342, -0.0845326, 0.230346, 0.970622, 0.0695318, 0.0664503, -0.0869759, 0.993992, -32.4535, 4.23183, 59.7043)
 use_collision = true
 size = Vector3(12.8627, 0.0687866, 1)
+material = ExtResource("7_jhmcy")
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="."]
 transform = Transform3D(0.695285, 0.168806, 0.698629, -0.366195, 0.919602, 0.142243, -0.61845, -0.354734, 0.701202, 2.91501, 2.55082, 54.6437)
 use_collision = true
 size = Vector3(12.5608, 0.142456, 1)
+material = ExtResource("7_jhmcy")
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="."]
 transform = Transform3D(0.199916, 0.149061, 0.968408, -0.361115, 0.929995, -0.0686008, -0.91084, -0.335992, 0.239749, 5.84402, 0.725023, 50.8591)
 use_collision = true
 size = Vector3(3.79859, 0.0769653, 1)
+material = ExtResource("7_jhmcy")
 
 [node name="water tank 1" parent="." instance=ExtResource("6_3i86w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.0678, 10, 38)
@@ -7402,3 +8867,29 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.46299, 1.48494, -23.5325)
 stream = ExtResource("11_n4u6i")
 autoplay = true
 parameters/looping = true
+
+[node name="bug 2" parent="." instance=ExtResource("12_fhovj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3, 0)
+
+[node name="bug 3" parent="." instance=ExtResource("12_fhovj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7, 3, 38)
+
+[node name="bug 4" parent="." instance=ExtResource("12_fhovj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -25, 3, 45)
+
+[node name="bug 9" parent="." instance=ExtResource("12_fhovj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -22, 5, 30)
+
+[node name="bug 6" parent="." instance=ExtResource("12_fhovj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -28, 3, 29)
+
+[node name="bug 7" parent="." instance=ExtResource("12_fhovj")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -60, 11, 53.04114)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="."]
+transform = Transform3D(0.8678221, 0.031076735, 0.49590215, 0.032964997, 0.9922421, -0.11986917, -0.49578014, 0.12037253, 0.8600653, 62.38243, 10.005696, -41.377342)
+material_override = ExtResource("7_jhmcy")
+size = Vector3(3, 0.2211914, 11.045105)
+
+[node name="water tank 3" parent="." instance=ExtResource("6_3i86w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.24686, 29.19278, -41.987976)

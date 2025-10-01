@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://br4yqujj7pgw6"]
+
+[ext_resource type="Texture2D" uid="uid://did11qvehy8fp" path="res://textures/old-wood-planks-128x128.png" id="1_dgi0l"]
+
+[resource]
+albedo_texture = ExtResource("1_dgi0l")
+uv1_scale = Vector3(0.255, 0.255, 0.255)
+uv1_triplanar = true
+texture_filter = 0

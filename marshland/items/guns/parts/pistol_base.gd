@@ -7,6 +7,8 @@ extends Node3D
 @onready var bullet = preload("res://items/guns/bullet.tscn")
 @onready var main =  get_tree().get_first_node_in_group("world") #get_tree().root
 
+@export var dmg: float = 10
+
 var v_recoil = 0.2
 var h_recoil = 0.06
 var recoil_speed = 2
@@ -33,6 +35,7 @@ func _process(delta: float) -> void:
 
 func attack():
 	var new_bullet = bullet.instantiate()
+	new_bullet.dmg = dmg
 	new_bullet.spawn_transform = $bullet_marker.global_transform
 	$bullet_marker/Sprite3D.rotation.z = randi_range(-20, 20)
 	#$AnimationPlayer.play("shoot")
@@ -40,6 +43,7 @@ func attack():
 	$bullet_marker/Sprite3D.show()
 	recoil()
 	$AnimationPlayer.play("shoot")
+	$"BloodyGunshot230516(1)".play()
 	await get_tree().create_timer(0.04).timeout
 	$bullet_marker/Sprite3D.hide()
 	#$shoot.play()

@@ -1,0 +1,136 @@
+[gd_scene load_steps=10 format=3 uid="uid://btfefsenvxkym"]
+
+[ext_resource type="Script" uid="uid://328iwv820suk" path="res://player/player.gd" id="1_4flbx"]
+[ext_resource type="PackedScene" uid="uid://tyafkrc6juqs" path="res://items/guns/pistol.tscn" id="2_rkbax"]
+[ext_resource type="PackedScene" uid="uid://bpkld0ej8quy7" path="res://items/guns/parts/pistol_base.tscn" id="3_g1dw6"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4flbx"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_4flbx"]
+
+[sub_resource type="Animation" id="Animation_g1dw6"]
+resource_name = "death"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.96667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/ColorRect/Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.233333, 1.96667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_yw30f"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/ColorRect/Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yw30f"]
+_data = {
+&"RESET": SubResource("Animation_yw30f"),
+&"death": SubResource("Animation_g1dw6")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_qjkh3"]
+font_size = 32
+font_color = Color(0.778936, 0.329703, 0.314609, 1)
+
+[node name="player" type="CharacterBody3D" node_paths=PackedStringArray("head", "cam") groups=["player"]]
+script = ExtResource("1_4flbx")
+head = NodePath("head")
+cam = NodePath("head/recoil/Camera3D")
+
+[node name="head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="recoil" type="Node3D" parent="head"]
+unique_name_in_owner = true
+
+[node name="Camera3D" type="Camera3D" parent="head/recoil"]
+unique_name_in_owner = true
+current = true
+
+[node name="equiped" type="Node3D" parent="head/recoil/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.860433)
+
+[node name="pistol" parent="head/recoil/Camera3D/equiped" instance=ExtResource("2_rkbax")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.228961, -0.229347, 0.207466)
+visible = false
+
+[node name="pistol_base" parent="head/recoil/Camera3D/equiped" instance=ExtResource("3_g1dw6")]
+transform = Transform3D(0.12, 0, 0, 0, 0.12, 0, 0, 0, 0.12, 0.334965, -0.264514, 0.122668)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_4flbx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_4flbx")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_yw30f")
+}
+
+[node name="ColorRect" type="ColorRect" parent="AnimationPlayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="Label" type="Label" parent="AnimationPlayer/ColorRect"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -78.0
+offset_top = -11.5
+offset_right = 78.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Taken By The Marsh"
+label_settings = SubResource("LabelSettings_qjkh3")

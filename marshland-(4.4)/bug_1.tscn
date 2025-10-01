@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://ctlv23hjrwvr6"]
+
+[ext_resource type="Script" uid="uid://pn6nswwfdvhi" path="res://bug_1.gd" id="1_g8b81"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_j7aci"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_g8b81"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_j2ojl"]
+radius = 5.0
+
+[node name="bug 1" type="CharacterBody3D"]
+script = ExtResource("1_g8b81")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_j7aci")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_g8b81")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("SphereShape3D_j2ojl")
+
+[node name="eyecast" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0879126, 0)
+target_position = Vector3(0, 0, 10)
+
+[node name="probecast" type="RayCast3D" parent="."]
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
